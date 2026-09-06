@@ -24,4 +24,4 @@ Use an inner code-evolution loop to generate and mutate candidates and an outer 
 
 Relative to original kriging, reported RMSE reductions are 15.4%, 21.2%, and 13.0% for Cu, Pb, and Zn. GeoCP interval score falls from 55.37 to 46.12, a 16.7% reduction. Retrieval-guided evolution improves the tested objectives. Table 1 does not show uniform gains on every metric: Zn R-squared is lower for the full system. The evidence in this version covers two algorithm families, not general EO workflow automation.
 
-**Reading pointers:** Sections 4–5; Tables 1–2; PDF pages 6–10. Page numbers refer to the archived PDF. Results are reported by the paper, not independently reproduced.
+**Reading pointers:** Sections 4–5; Tables 1–2; PDF pages 6–10.

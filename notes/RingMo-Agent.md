@@ -25,4 +25,4 @@ Build RS-VL3M with over three million image–text pairs, use modality-specific 
 
 The results support broad remote-sensing specialization: relation F1 reaches 75.34 on FIT-RS and 90.23 on ReCon1M-REL; SARDet-100k mAP@50 reaches 53.84. However, comparisons often mix fine-tuned and zero-shot systems. CityNav test-unseen success remains 4.74%, below AerialVLN+GSM at 6.72%. This paper is chiefly a trained foundation-model reference, not evidence of continual external skill evolution.
 
-**Reading pointers:** Section 5; Tables 3–6 and 16–20; PDF pages 11–18. Page numbers refer to the archived PDF. Results are reported by the paper, not independently reproduced.
+**Reading pointers:** Section 5; Tables 3–6 and 16–20; PDF pages 11–18.

@@ -24,4 +24,4 @@ Represent each skill with a descriptor, textual procedure, runtime state cards, 
 
 On OSWorld, Gemini 3 Flash rises from 36.65% to 47.97%, and Qwen3-VL-235B from 21.34% to 39.17%. State cards, images, and selective branch consultation each matter. Benefits depend on the setting: Qwen3-VL-8B remains at 6.29% on macOSWorld, and GLM-5V ties text-only skills there. This is a useful skill-design reference; remote-sensing transfer is not evaluated in the paper.
 
-**Reading pointers:** Section 3; Tables 1–3 and Figure 3; PDF pages 6–8. Page numbers refer to the archived PDF. Results are reported by the paper, not independently reproduced.
+**Reading pointers:** Section 3; Tables 1–3 and Figure 3; PDF pages 6–8.

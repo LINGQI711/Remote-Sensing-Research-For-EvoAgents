@@ -25,4 +25,4 @@ Coordinate data summarization, planning/workflow construction, code-based tool c
 
 With GPT-5 on Earth-Bench, accuracy is 59.92% with six tools and 67.61% with full tools, versus Earth-Agent at 63.16%. Thus the minimal-tool setting is competitive but does not exceed that baseline. Cascading errors remain substantial: GPT-5 geospatial analysis falls from 76.66% stage-wise to 58.72% end-to-end. Tool creation increases flexibility, but reliable complete pipelines remain difficult.
 
-**Reading pointers:** Sections 4–5; Tables 2–4 and Figure 4; PDF pages 7–12. Page numbers refer to the archived PDF. Results are reported by the paper, not independently reproduced.
+**Reading pointers:** Sections 4–5; Tables 2–4 and Figure 4; PDF pages 7–12.

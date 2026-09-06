@@ -25,4 +25,4 @@ An accumulation phase summarizes multiple rollouts with visual grounding and cro
 
 Average@4 improves by 2.58–6.71 points over tools-only baselines across backbone averages. Skills reduce execution mistakes, while experiences change tool selection toward task-relevant strategies. Crucially, the conclusion explicitly describes the evaluated setting as one accumulation-then-test cycle; repeated lifelong improvement is an architectural possibility rather than a demonstrated long-term result.
 
-**Reading pointers:** Sections 3 and 5; Tables 2–4 and Figures 3–5; PDF pages 5–9. Page numbers refer to the archived PDF. Results are reported by the paper, not independently reproduced.
+**Reading pointers:** Sections 3 and 5; Tables 2–4 and Figures 3–5; PDF pages 5–9.

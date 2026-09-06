@@ -24,4 +24,4 @@ Filter the tool space using the sensing context, then retrieve a task-conditione
 
 The paper reports the best Earth-Bench accuracy on four of five tested backbones; GPT-5 reaches 74.33% versus 63.16% for Earth-Agent. Memory ablations support complementary roles for task knowledge and workflow structure. Gains are not uniform across every metric or modality: Table 4 reports lower RGB accuracy than Earth-Agent despite a higher overall average. The experiments support structured memory reuse within these benchmarks, not unrestricted long-term autonomy.
 
-**Reading pointers:** Experiments; Tables 1–4; PDF pages 5–6. Page numbers refer to the archived PDF. Results are reported by the paper, not independently reproduced.
+**Reading pointers:** Experiments; Tables 1–4; PDF pages 5–6.

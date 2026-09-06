@@ -2,7 +2,7 @@
 
 [Back to the library](../README.md)
 
-One concise English note per archived paper, covering **problem, method, experiments, and conclusions**. Notes follow the local PDF version and distinguish reported findings from their limits.
+Reading notes covering **problem, method, experiments, and conclusions**.
 
 | Paper | Year / venue | Main topic | Version read |
 | --- | --- | --- | --- |

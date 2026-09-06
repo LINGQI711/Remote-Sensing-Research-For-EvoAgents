@@ -25,4 +25,4 @@ Organize tool information into a three-tier skill tree: skill summaries, tool ca
 
 For Qwen3-32B in AP, accuracy improves by 12.45 percentage points over Flat; input tokens per question fall from 502,119 to 70,759, about 86%. The largest token reduction is setting-specific: RAG is cheaper for some stronger backbones. The 2layers variant has better tool-matching scores but lower final accuracy, showing that better tool coverage alone does not guarantee task success.
 
-**Reading pointers:** Section IV; Tables II–V; PDF pages 8–10. Page numbers refer to the archived PDF. Results are reported by the paper, not independently reproduced.
+**Reading pointers:** Section IV; Tables II–V; PDF pages 8–10.

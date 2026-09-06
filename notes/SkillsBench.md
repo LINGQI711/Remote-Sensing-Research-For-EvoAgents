@@ -25,4 +25,4 @@ Build containerized tasks with instructions, reusable skill resources, oracle so
 
 Section 4 reports an average curated-skill gain of about 16.2 percentage points; 16 of 84 tasks nevertheless regress. Self-generation before solving provides little or negative average benefit. Tasks with focused skill bundles show stronger gains than those with larger bundles, but this grouped analysis does not establish a universal optimal skill count. Version caveat: the abstract says 86 tasks, while evaluation uses 84; Figure 2 reports +12.66 pp rather than the main text’s +16.2 pp. Use the specific table/protocol when citing numbers. This is not a test of trajectory-based skill evolution.
 
-**Reading pointers:** Sections 2.5–4.2; Tables 3–6 and Figure 2; PDF pages 4–7. Page numbers refer to the archived PDF. Results are reported by the paper, not independently reproduced.
+**Reading pointers:** Sections 2.5–4.2; Tables 3–6 and Figure 2; PDF pages 4–7.

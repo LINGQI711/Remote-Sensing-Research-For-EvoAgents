@@ -25,4 +25,4 @@ A Manager handles task decomposition, routing, verification, replanning, and sto
 
 On Earth-Bench, Qwen3-4B final accuracy rises from 15.73/10.08 to 43.95/45.56 in AP/IF. Expertise, hierarchy, and verification contribute complementary gains. The evidence supports improved small-model reliability, not dominance over every larger model: several proprietary baselines retain higher final accuracy. Gains also include parameter training, so this is not a purely training-free evolution method.
 
-**Reading pointers:** Sections 3–4; Tables 1–4; PDF pages 6–8. Page numbers refer to the archived PDF. Results are reported by the paper, not independently reproduced.
+**Reading pointers:** Sections 3–4; Tables 1–4; PDF pages 6–8.
