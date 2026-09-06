@@ -4,6 +4,7 @@
 !/.gitignore
 !/README.md
 !/metadata.json
+!/notes/README.md
 !/papers/2026/ACM-MM/HiRS-Agent - A Hierarchical Multi-Agent System for Reliable Long-Horizon Remote Sensing Task Solving.pdf
 !/papers/2026/ICML/XSkill - Continual Learning from Experience and Skills in Multimodal Agents.pdf
 !/papers/2026/arXiv/GeoForge - Non-Parametric Self-Evolving Agents for Earth-Observation Reasoning.pdf
@@ -13,3 +14,12 @@
 !/papers/2026/arXiv/SkillsBench - Benchmarking How Well Agent Skills Work Across Diverse Tasks.pdf
 !/papers/2025/arXiv/GeoEvolve - Automating Geospatial Model Discovery via Multi-Agent Large Language Models.pdf
 !/papers/2025/arXiv/RingMo-Agent - A Unified Remote Sensing Foundation Model for Multi-Platform and Multi-Modal Reasoning.pdf
+!/notes/HiRS-Agent.md
+!/notes/XSkill.md
+!/notes/GeoForge.md
+!/notes/MMSkills.md
+!/notes/OpenEarth-Agent.md
+!/notes/RS-Claw.md
+!/notes/SkillsBench.md
+!/notes/GeoEvolve.md
+!/notes/RingMo-Agent.md
