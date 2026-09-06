@@ -5,21 +5,66 @@
 !/README.md
 !/metadata.json
 !/notes/README.md
-!/papers/2026/ACM-MM/HiRS-Agent - A Hierarchical Multi-Agent System for Reliable Long-Horizon Remote Sensing Task Solving.pdf
-!/papers/2026/ICML/XSkill - Continual Learning from Experience and Skills in Multimodal Agents.pdf
-!/papers/2026/arXiv/GeoForge - Non-Parametric Self-Evolving Agents for Earth-Observation Reasoning.pdf
-!/papers/2026/arXiv/MMSkills - Towards Multimodal Skills for General Visual Agents.pdf
-!/papers/2026/arXiv/OpenEarth-Agent - From Tool Calling to Tool Creation for Open-Environment Earth Observation.pdf
-!/papers/2026/arXiv/RS-Claw - Progressive Active Tool Exploration via Hierarchical Skill Trees for Remote Sensing Agents.pdf
-!/papers/2026/arXiv/SkillsBench - Benchmarking How Well Agent Skills Work Across Diverse Tasks.pdf
-!/papers/2025/arXiv/GeoEvolve - Automating Geospatial Model Discovery via Multi-Agent Large Language Models.pdf
-!/papers/2025/arXiv/RingMo-Agent - A Unified Remote Sensing Foundation Model for Multi-Platform and Multi-Modal Reasoning.pdf
-!/notes/HiRS-Agent.md
-!/notes/XSkill.md
-!/notes/GeoForge.md
-!/notes/MMSkills.md
-!/notes/OpenEarth-Agent.md
-!/notes/RS-Claw.md
-!/notes/SkillsBench.md
-!/notes/GeoEvolve.md
-!/notes/RingMo-Agent.md
+!/notes/remote-sensing/README.md
+!/notes/general-skills/README.md
+!/papers/remote-sensing/2026/ICLR/Earth-Agent - Unlocking the Full Landscape of Earth Observation with Agents.pdf
+!/notes/remote-sensing/Earth-Agent.md
+!/papers/remote-sensing/2026/arXiv/Experience-Driven Multi-Agent Systems Are Training-free Context-aware Earth Observers.pdf
+!/notes/remote-sensing/GeoEvolver.md
+!/papers/remote-sensing/2026/arXiv/GeoForge - Non-Parametric Self-Evolving Agents for Earth-Observation Reasoning.pdf
+!/notes/remote-sensing/GeoForge.md
+!/papers/remote-sensing/2026/CVPR/GeoMMBench and GeoMMAgent - Toward Expert-Level Multimodal Intelligence in Geoscience and Remote Sensing.pdf
+!/notes/remote-sensing/GeoMMAgent.md
+!/papers/remote-sensing/2026/ACM-MM/HiRS-Agent - A Hierarchical Multi-Agent System for Reliable Long-Horizon Remote Sensing Task Solving.pdf
+!/notes/remote-sensing/HiRS-Agent.md
+!/papers/remote-sensing/2026/arXiv/OpenEarth-Agent - From Tool Calling to Tool Creation for Open-Environment Earth Observation.pdf
+!/notes/remote-sensing/OpenEarth-Agent.md
+!/papers/remote-sensing/2026/arXiv/OpenEarthAgent - A Unified Framework for Tool-Augmented Geospatial Agents.pdf
+!/notes/remote-sensing/OpenEarthAgent.md
+!/papers/remote-sensing/2026/arXiv/RemoteAgent - Bridging Vague Human Intents and Earth Observation with RL-based Agentic MLLMs.pdf
+!/notes/remote-sensing/RemoteAgent.md
+!/papers/remote-sensing/2026/SCIS/RS-Agent - Automating Remote Sensing Tasks through Intelligent Agent.pdf
+!/notes/remote-sensing/RS-Agent.md
+!/papers/remote-sensing/2026/arXiv/RS-Claw - Progressive Active Tool Exploration via Hierarchical Skill Trees for Remote Sensing Agents.pdf
+!/notes/remote-sensing/RS-Claw.md
+!/papers/remote-sensing/2026/ACL/RSMeM - Knowledge-Enhanced Memory Evolution for Remote Sensing Agents with Systematic Evaluation.pdf
+!/notes/remote-sensing/RSMeM.md
+!/papers/remote-sensing/2025/arXiv/GeoEvolve - Automating Geospatial Model Discovery via Multi-Agent Large Language Models.pdf
+!/notes/remote-sensing/GeoEvolve.md
+!/papers/remote-sensing/2025/IGARSS/Multi-Agent Geospatial Copilots for Remote Sensing Workflows.pdf
+!/notes/remote-sensing/Multi-Agent-Geospatial-Copilots.md
+!/papers/remote-sensing/2025/arXiv/RingMo-Agent - A Unified Remote Sensing Foundation Model for Multi-Platform and Multi-Modal Reasoning.pdf
+!/notes/remote-sensing/RingMo-Agent.md
+!/papers/remote-sensing/2025/arXiv/ThinkGeo - Evaluating Tool-Augmented Agents for Remote Sensing Tasks.pdf
+!/notes/remote-sensing/ThinkGeo.md
+!/papers/remote-sensing/2024/IEEE-TGRS/Change-Agent - Towards Interactive Comprehensive Remote Sensing Change Interpretation and Analysis.pdf
+!/notes/remote-sensing/Change-Agent.md
+!/papers/remote-sensing/2024/CVPR-Workshops/GeoLLM-Engine - A Realistic Environment for Building Geospatial Copilots.pdf
+!/notes/remote-sensing/GeoLLM-Engine.md
+!/papers/remote-sensing/2024/IGARSS/Remote Sensing ChatGPT - Solving Remote Sensing Tasks with ChatGPT and Visual Models.pdf
+!/notes/remote-sensing/Remote-Sensing-ChatGPT.md
+!/papers/general-skills/2026/arXiv/EvoSkill - Automated Skill Discovery for Multi-Agent Systems.pdf
+!/notes/general-skills/EvoSkill.md
+!/papers/general-skills/2026/arXiv/MemSkill - Learning and Evolving Memory Skills for Self-Evolving Agents.pdf
+!/notes/general-skills/MemSkill.md
+!/papers/general-skills/2026/arXiv/MMSkills - Towards Multimodal Skills for General Visual Agents.pdf
+!/notes/general-skills/MMSkills.md
+!/papers/general-skills/2026/arXiv/SkillCAT - Contrastive, Assessment-Augmented and Topology-Aware Skill Self-Evolution for LLM Agents.pdf
+!/notes/general-skills/SkillCAT.md
+!/papers/general-skills/2026/arXiv/SkillOpt - Executive Strategy for Self-Evolving Agent Skills.pdf
+!/notes/general-skills/SkillOpt.md
+!/papers/general-skills/2026/arXiv/SkillsBench - Benchmarking How Well Agent Skills Work Across Diverse Tasks.pdf
+!/notes/general-skills/SkillsBench.md
+!/papers/general-skills/2026/arXiv/Trace2Skill - Distill Trajectory-Local Lessons into Transferable Agent Skills.pdf
+!/notes/general-skills/Trace2Skill.md
+!/papers/general-skills/2026/ICML/XSkill - Continual Learning from Experience and Skills in Multimodal Agents.pdf
+!/notes/general-skills/XSkill.md
+!/papers/general-skills/2025/ICML/Agent Workflow Memory.pdf
+!/notes/general-skills/AWM.md
+!/papers/general-skills/2025/arXiv/SkillWeaver - Web Agents can Self-Improve by Discovering and Honing Skills.pdf
+!/notes/general-skills/SkillWeaver.md
+!/papers/general-skills/2024/AAAI/ExpeL - LLM Agents Are Experiential Learners.pdf
+!/notes/general-skills/ExpeL.md
+!/papers/general-skills/2024/TMLR/Voyager - An Open-Ended Embodied Agent with Large Language Models.pdf
+!/notes/general-skills/Voyager.md
+!/.gitattributes

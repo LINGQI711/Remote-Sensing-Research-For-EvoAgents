@@ -1,0 +1,22 @@
+# Part I: Remote Sensing Agents
+
+[Paper library](../../README.md) · [All notes](../README.md)
+
+- [Earth-Agent: Earth-Agent: Unlocking the Full Landscape of Earth Observation with Agents](Earth-Agent.md)
+- [GeoEvolver: Experience-Driven Multi-Agent Systems Are Training-free Context-aware Earth Observers](GeoEvolver.md)
+- [GeoForge: GeoForge: Non-Parametric Self-Evolving Agents for Earth-Observation Reasoning](GeoForge.md)
+- [GeoMMAgent: GeoMMBench and GeoMMAgent: Toward Expert-Level Multimodal Intelligence in Geoscience and Remote Sensing](GeoMMAgent.md)
+- [HiRS-Agent: HiRS-Agent: A Hierarchical Multi-Agent System for Reliable Long-Horizon Remote Sensing Task Solving](HiRS-Agent.md)
+- [OpenEarth-Agent: OpenEarth-Agent: From Tool Calling to Tool Creation for Open-Environment Earth Observation](OpenEarth-Agent.md)
+- [OpenEarthAgent: OpenEarthAgent: A Unified Framework for Tool-Augmented Geospatial Agents](OpenEarthAgent.md)
+- [RemoteAgent: RemoteAgent: Bridging Vague Human Intents and Earth Observation with RL-based Agentic MLLMs](RemoteAgent.md)
+- [RS-Agent: RS-Agent: Automating Remote Sensing Tasks through Intelligent Agent](RS-Agent.md)
+- [RS-Claw: RS-Claw: Progressive Active Tool Exploration via Hierarchical Skill Trees for Remote Sensing Agents](RS-Claw.md)
+- [RSMeM: RSMeM: Knowledge-Enhanced Memory Evolution for Remote Sensing Agents with Systematic Evaluation](RSMeM.md)
+- [GeoEvolve: GeoEvolve: Automating Geospatial Model Discovery via Multi-Agent Large Language Models](GeoEvolve.md)
+- [GeoLLM-Squad: Multi-Agent Geospatial Copilots for Remote Sensing Workflows](Multi-Agent-Geospatial-Copilots.md)
+- [RingMo-Agent: RingMo-Agent: A Unified Remote Sensing Foundation Model for Multi-Platform and Multi-Modal Reasoning](RingMo-Agent.md)
+- [ThinkGeo: ThinkGeo: Evaluating Tool-Augmented Agents for Remote Sensing Tasks](ThinkGeo.md)
+- [Change-Agent: Change-Agent: Towards Interactive Comprehensive Remote Sensing Change Interpretation and Analysis](Change-Agent.md)
+- [GeoLLM-Engine: GeoLLM-Engine: A Realistic Environment for Building Geospatial Copilots](GeoLLM-Engine.md)
+- [RS-ChatGPT: Remote Sensing ChatGPT: Solving Remote Sensing Tasks with ChatGPT and Visual Models](Remote-Sensing-ChatGPT.md)
