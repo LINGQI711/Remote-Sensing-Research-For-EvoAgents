@@ -68,3 +68,15 @@
 !/papers/general-skills/2024/TMLR/Voyager - An Open-Ended Embodied Agent with Large Language Models.pdf
 !/notes/general-skills/Voyager.md
 !/.gitattributes
+!/papers/remote-sensing/2026/arXiv/Agentic AI for Remote Sensing - Technical Challenges and Research Directions.pdf
+!/notes/remote-sensing/AgenticRS.md
+!/papers/remote-sensing/2026/ISPRS-JPRS/Towards comprehensive multi-task land cover change detection leveraging vision-language model and LLM-driven agents.pdf
+!/notes/remote-sensing/GaiaAgent.md
+!/papers/remote-sensing/2026/EACL-Findings/MapAgent - A Hierarchical Agent for Geospatial Reasoning with Dynamic Map Tool Integration.pdf
+!/notes/remote-sensing/MapAgent.md
+!/papers/remote-sensing/2025/arXiv/REMSA - Foundation Model Selection for Remote Sensing via a Constraint-Aware Agent.pdf
+!/notes/remote-sensing/REMSA.md
+!/papers/remote-sensing/2024/ICLR-Workshops/Evaluating Tool-Augmented Agents in Remote Sensing Platforms.pdf
+!/notes/remote-sensing/GeoLLM-QA.md
+!/papers/remote-sensing/2026/ACL-Findings/Towards LLM Agents for Earth Observation.pdf
+!/notes/remote-sensing/UnivEARTH.md
