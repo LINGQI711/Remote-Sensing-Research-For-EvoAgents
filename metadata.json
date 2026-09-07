@@ -15,7 +15,8 @@
     "pdf": "papers/remote-sensing/2026/ICLR/Earth-Agent - Unlocking the Full Landscape of Earth Observation with Agents.pdf",
     "sha256": "97228beb0798bb021f70d9c973ba5dc13d31667bef71ca1c282099bfb7e0694f",
     "summary": "Earth-Agent exposes 104 professional tools through MCP and connects reasoning to RGB imagery, spectral observations, and Earth products. EarthBench evaluates both autonomous planning and execution from explicit instructions, with step-level and final-outcome measures.",
-    "notes": "notes/remote-sensing/Earth-Agent.md"
+    "notes": "notes/remote-sensing/Earth-Agent.md",
+    "code": "https://github.com/opendatalab/Earth-Agent"
   },
   {
     "name": "GeoEvolver",
@@ -33,7 +34,8 @@
     "pdf": "papers/remote-sensing/2026/arXiv/Experience-Driven Multi-Agent Systems Are Training-free Context-aware Earth Observers.pdf",
     "sha256": "d5b1bc6110e6903f35d0c9459db64f6e6cb776669e2e8674ee74cd764ee64936",
     "summary": "A retrieval-augmented orchestrator decomposes tasks, explores alternative tool parameters through multiple agents, and contrasts successful and failed attempts. Root-cause analysis distills experience into contextual tool constraints for subsequent retrieval, without updating language-model weights.",
-    "notes": "notes/remote-sensing/GeoEvolver.md"
+    "notes": "notes/remote-sensing/GeoEvolver.md",
+    "code": ""
   },
   {
     "name": "GeoForge",
@@ -50,7 +52,8 @@
     "summary": "Combines workflow graphs, action experiences, and skill SOPs with sensing-aware tool filtering and gated memory updates.",
     "notes": "notes/remote-sensing/GeoForge.md",
     "part": "remote-sensing",
-    "paper_type": "Agent / skill method"
+    "paper_type": "Agent / skill method",
+    "code": ""
   },
   {
     "name": "GeoMMAgent",
@@ -68,7 +71,8 @@
     "pdf": "papers/remote-sensing/2026/CVPR/GeoMMBench and GeoMMAgent - Toward Expert-Level Multimodal Intelligence in Geoscience and Remote Sensing.pdf",
     "sha256": "bede69f5ce9e8f34642eb6c337d17d61e48a3a3c3b6e235aad3ad701795f8246",
     "summary": "GeoMMBench evaluates this broader expertise. GeoMMAgent combines retrieval, perception, and reasoning specialists with external remote sensing models, using a zero-shot agent framework rather than fine-tuning a new foundation model.",
-    "notes": "notes/remote-sensing/GeoMMAgent.md"
+    "notes": "notes/remote-sensing/GeoMMAgent.md",
+    "code": "https://github.com/Shihao-Cheng/GeoMMAgent"
   },
   {
     "name": "HiRS-Agent",
@@ -85,7 +89,8 @@
     "summary": "Organizes long-horizon remote sensing workflows into manager and specialist roles, combining step-level verification, expert tuning, and hierarchical reinforcement learning.",
     "notes": "notes/remote-sensing/HiRS-Agent.md",
     "part": "remote-sensing",
-    "paper_type": "Agent / skill method"
+    "paper_type": "Agent / skill method",
+    "code": ""
   },
   {
     "name": "OpenEarth-Agent",
@@ -102,7 +107,8 @@
     "summary": "Creates tools and adapts workflows to unfamiliar data, evaluating complete Earth-observation pipelines in OpenEarth-Bench.",
     "notes": "notes/remote-sensing/OpenEarth-Agent.md",
     "part": "remote-sensing",
-    "paper_type": "Agent / skill method"
+    "paper_type": "Agent / skill method",
+    "code": ""
   },
   {
     "name": "OpenEarthAgent",
@@ -120,7 +126,8 @@
     "pdf": "papers/remote-sensing/2026/arXiv/OpenEarthAgent - A Unified Framework for Tool-Augmented Geospatial Agents.pdf",
     "sha256": "9f965a70b450b0432e77f6aa7082f830544b69043c68e57a9bf47932f4f9572a",
     "summary": "The framework standardizes tool schemas and builds validated trajectories across optical, SAR, and GIS tasks. It trains Qwen3-4B on 14,538 examples using supervised, response-only learning, with tool outputs retained as context. Evaluation contains 1,169 examples. This is distinct from OpenEarth-Agent, the separately indexed tool-creation paper.",
-    "notes": "notes/remote-sensing/OpenEarthAgent.md"
+    "notes": "notes/remote-sensing/OpenEarthAgent.md",
+    "code": "https://github.com/mbzuai-oryx/OpenEarthAgent"
   },
   {
     "name": "RemoteAgent",
@@ -138,7 +145,8 @@
     "pdf": "papers/remote-sensing/2026/arXiv/RemoteAgent - Bridging Vague Human Intents and Earth Observation with RL-based Agentic MLLMs.pdf",
     "sha256": "03427a5f1833334c0048076cba5c4c2b3f75f06acf62838aa8f0c2c72d46f52b",
     "summary": "VagueEO supplies ambiguous requests, and reinforcement learning with GRPO and LoRA adapts Qwen2.5-VL-7B to infer intent and choose execution strategies. Sparse visual tasks can be handled internally, while dense predictions use specialized tools through MCP.",
-    "notes": "notes/remote-sensing/RemoteAgent.md"
+    "notes": "notes/remote-sensing/RemoteAgent.md",
+    "code": "https://github.com/1e12Leon/RemoteAgent"
   },
   {
     "name": "RS-Agent",
@@ -156,7 +164,8 @@
     "pdf": "papers/remote-sensing/2026/SCIS/RS-Agent - Automating Remote Sensing Tasks through Intelligent Agent.pdf",
     "sha256": "933c19b04a35d9e38cc98247122177e62cd51d95f70d20fee00041babf64d43a",
     "summary": "A central controller coordinates a dynamic toolkit, a solution space of expert workflows, and a knowledge space. Task-Aware Retrieval first identifies the task and then retrieves suitable solutions. DualRAG combines complementary retrieval paths to supply domain evidence. The controller uses these resources to plan and execute optical and SAR workflows.",
-    "notes": "notes/remote-sensing/RS-Agent.md"
+    "notes": "notes/remote-sensing/RS-Agent.md",
+    "code": "https://github.com/IntelliSensing/RS-Agent"
   },
   {
     "name": "RS-Claw",
@@ -173,7 +182,8 @@
     "summary": "Uses semantically organized skill trees and progressive disclosure to balance tool availability with context cost.",
     "notes": "notes/remote-sensing/RS-Claw.md",
     "part": "remote-sensing",
-    "paper_type": "Agent / skill method"
+    "paper_type": "Agent / skill method",
+    "code": ""
   },
   {
     "name": "RSMeM",
@@ -191,7 +201,8 @@
     "pdf": "papers/remote-sensing/2026/ACL/RSMeM - Knowledge-Enhanced Memory Evolution for Remote Sensing Agents with Systematic Evaluation.pdf",
     "sha256": "cfcd82df2c6f79a8651f141bb3aeab07473599bb689d790013a2adf20dc92adb",
     "summary": "RSMeM combines a hierarchical knowledge base and task cards with failure-aware experience refinement. GeoTraceCompress distills trajectories into compact memories, while reflection records constraints that can guide later tool use.",
-    "notes": "notes/remote-sensing/RSMeM.md"
+    "notes": "notes/remote-sensing/RSMeM.md",
+    "code": "https://github.com/AI9Stars/RSMeM"
   },
   {
     "name": "GeoEvolve",
@@ -208,7 +219,8 @@
     "summary": "Combines evolutionary code search with retrieved geospatial knowledge to improve classical spatial models.",
     "notes": "notes/remote-sensing/GeoEvolve.md",
     "part": "remote-sensing",
-    "paper_type": "Supporting model / algorithm evolution"
+    "paper_type": "Supporting model / algorithm evolution",
+    "code": ""
   },
   {
     "name": "Multi-Agent-Geospatial-Copilots",
@@ -226,7 +238,8 @@
     "pdf": "papers/remote-sensing/2025/IGARSS/Multi-Agent Geospatial Copilots for Remote Sensing Workflows.pdf",
     "sha256": "f4a9ea48920d170e92888aeb8d86b950b596f0c4e10ba361596e94d6c1ecabdf",
     "summary": "GeoLLM-Squad builds on GeoLLM-Engine and AutoGen, assigning specialist agents and using an orchestrator to coordinate dependencies. Intent-based tool selection and workflow memory help reuse successful execution patterns.",
-    "notes": "notes/remote-sensing/Multi-Agent-Geospatial-Copilots.md"
+    "notes": "notes/remote-sensing/Multi-Agent-Geospatial-Copilots.md",
+    "code": ""
   },
   {
     "name": "RingMo-Agent",
@@ -243,7 +256,8 @@
     "summary": "Combines RS-VL3M training data, modality-specific representations, and task-aware decoding for remote sensing perception and reasoning.",
     "notes": "notes/remote-sensing/RingMo-Agent.md",
     "part": "remote-sensing",
-    "paper_type": "Supporting model / algorithm evolution"
+    "paper_type": "Supporting model / algorithm evolution",
+    "code": ""
   },
   {
     "name": "ThinkGeo",
@@ -261,7 +275,8 @@
     "pdf": "papers/remote-sensing/2025/arXiv/ThinkGeo - Evaluating Tool-Augmented Agents for Remote Sensing Tasks.pdf",
     "sha256": "a809d7c2dd260b12acceb8586c6f0920b84416b17798ca3fcc82a147144f767f",
     "summary": "ThinkGeo provides 486 tasks with 1,778 expert-verified reasoning steps across seven application domains. It evaluates a ReAct-style agent using perception, operation, and logic tools, separating instruction, tool, argument, summary, and final-answer quality.",
-    "notes": "notes/remote-sensing/ThinkGeo.md"
+    "notes": "notes/remote-sensing/ThinkGeo.md",
+    "code": "https://github.com/mbzuai-oryx/ThinkGeo"
   },
   {
     "name": "Change-Agent",
@@ -279,7 +294,8 @@
     "pdf": "papers/remote-sensing/2024/IEEE-TGRS/Change-Agent - Towards Interactive Comprehensive Remote Sensing Change Interpretation and Analysis.pdf",
     "sha256": "26c1499328f740f64600f88135d8079b18072cb73a0c02124dbcc7592d8b3b4f",
     "summary": "A multi-level change interpretation model jointly predicts pixel-level changes and semantic descriptions. Bidirectional iterative interaction connects these outputs. An LLM agent then plans and invokes Python tools to answer requests such as locating, describing, and counting changes.",
-    "notes": "notes/remote-sensing/Change-Agent.md"
+    "notes": "notes/remote-sensing/Change-Agent.md",
+    "code": "https://github.com/Chen-Yang-Liu/Change-Agent"
   },
   {
     "name": "GeoLLM-Engine",
@@ -297,7 +313,8 @@
     "pdf": "papers/remote-sensing/2024/CVPR-Workshops/GeoLLM-Engine - A Realistic Environment for Building Geospatial Copilots.pdf",
     "sha256": "12107205c5bc3a6171caecafe50e5a742a73e637c8955fdb67a4d55c40229a34",
     "summary": "GeoLLM-Engine supplies more than 175 tools spanning imagery, databases, mapping interfaces, and external knowledge. A formal environment state and model checking support executable workflows and automatically constructed evaluation queries.",
-    "notes": "notes/remote-sensing/GeoLLM-Engine.md"
+    "notes": "notes/remote-sensing/GeoLLM-Engine.md",
+    "code": ""
   },
   {
     "name": "Remote-Sensing-ChatGPT",
@@ -315,7 +332,8 @@
     "pdf": "papers/remote-sensing/2024/IGARSS/Remote Sensing ChatGPT - Solving Remote Sensing Tasks with ChatGPT and Visual Models.pdf",
     "sha256": "6777a69017a2db5a6cfc37af2734cb57a6b9681cadbfabdc7defc4cb1b0431ca",
     "summary": "ChatGPT interprets the request, plans subtasks, calls visual models, and explains their outputs. Visual cues convert image information into text that the language model can use. The toolkit combines scene classification, land-use segmentation, detection, captioning, edge extraction, polygon simplification, and counting.",
-    "notes": "notes/remote-sensing/Remote-Sensing-ChatGPT.md"
+    "notes": "notes/remote-sensing/Remote-Sensing-ChatGPT.md",
+    "code": "https://github.com/HaonanGuo/Remote-Sensing-ChatGPT"
   },
   {
     "name": "EvoSkill",
@@ -333,7 +351,8 @@
     "pdf": "papers/general-skills/2026/arXiv/EvoSkill - Automated Skill Discovery for Multi-Agent Systems.pdf",
     "sha256": "61cc0e44c3489a82435ce1b3c9e8d7db5cd21798e18c8c204b0f99b124baa615",
     "summary": "An executor produces task evidence, a proposer identifies promising improvements, and a skill builder implements candidate skills. Validation selects useful candidates and maintains an improvement frontier for subsequent evolution.",
-    "notes": "notes/general-skills/EvoSkill.md"
+    "notes": "notes/general-skills/EvoSkill.md",
+    "code": "https://github.com/sentient-agi/EvoSkill"
   },
   {
     "name": "MemSkill",
@@ -351,7 +370,8 @@
     "pdf": "papers/general-skills/2026/arXiv/MemSkill - Learning and Evolving Memory Skills for Self-Evolving Agents.pdf",
     "sha256": "07041223cb8447b36132461fb78b08e2adfc5b87aa32f867d206baef92348434",
     "summary": "A controller selects memory skills, an executor applies them, and a designer refines or adds skills using difficult cases. The controller is optimized with reinforcement learning, while the skill inventory can evolve through language-based design.",
-    "notes": "notes/general-skills/MemSkill.md"
+    "notes": "notes/general-skills/MemSkill.md",
+    "code": "https://github.com/ViktorAxelsen/MemSkill"
   },
   {
     "name": "MMSkills",
@@ -368,7 +388,8 @@
     "summary": "Binds reusable procedures to visual state cards and keyframes, consulting them in a temporary branch to guide live interaction.",
     "notes": "notes/general-skills/MMSkills.md",
     "part": "general-skills",
-    "paper_type": "Agent / skill method"
+    "paper_type": "Agent / skill method",
+    "code": "https://github.com/DeepExperience/MMSkills"
   },
   {
     "name": "SkillCAT",
@@ -386,7 +407,8 @@
     "pdf": "papers/general-skills/2026/arXiv/SkillCAT - Contrastive, Assessment-Augmented and Topology-Aware Skill Self-Evolution for LLM Agents.pdf",
     "sha256": "f1d5af3f23f86df4ad5188e0c7abc3cd7025517095f9b02732b7210005d49fb5",
     "summary": "Contrastive Causal Extraction compares same-task successes and failures. Assessment-Augmented Evolution replays candidate patches on source-task clones and filters harmful changes before hierarchical merging. Topology-Aware Task Execution loads relevant sub-skill nodes instead of the entire collection.",
-    "notes": "notes/general-skills/SkillCAT.md"
+    "notes": "notes/general-skills/SkillCAT.md",
+    "code": ""
   },
   {
     "name": "SkillOpt",
@@ -404,7 +426,8 @@
     "pdf": "papers/general-skills/2026/arXiv/SkillOpt - Executive Strategy for Self-Evolving Agent Skills.pdf",
     "sha256": "87f7f0f323b1671e9202b3ebb1596e909e507c71ecd1b360b0075a5ee1727fe3",
     "summary": "SkillOpt treats a compact textual skill as the optimization state while keeping the model frozen. Bounded rollout-and-reflection edits, a textual learning rate, slower meta-updates, a held-out acceptance gate, and rejected-edit memory control the optimization process.",
-    "notes": "notes/general-skills/SkillOpt.md"
+    "notes": "notes/general-skills/SkillOpt.md",
+    "code": "https://github.com/microsoft/SkillOpt"
   },
   {
     "name": "SkillsBench",
@@ -421,7 +444,8 @@
     "summary": "Pairs expertise-heavy tasks with skills and deterministic verifiers to measure when procedural guidance helps or hurts.",
     "notes": "notes/general-skills/SkillsBench.md",
     "part": "general-skills",
-    "paper_type": "Benchmark"
+    "paper_type": "Benchmark",
+    "code": "https://github.com/benchflow-ai/skillsbench"
   },
   {
     "name": "Trace2Skill",
@@ -439,7 +463,8 @@
     "pdf": "papers/general-skills/2026/arXiv/Trace2Skill - Distill Trajectory-Local Lessons into Transferable Agent Skills.pdf",
     "sha256": "9f3f43101583a993b9a82905d790fb2dd57c60b37897187a0706c047bd0b58b0",
     "summary": "Parallel analysts inspect trajectories and propose evidence-grounded skill patches. Hierarchical consolidation resolves overlaps and conflicts into a portable skill directory. The framework can deepen an existing skill or build a new one from experience.",
-    "notes": "notes/general-skills/Trace2Skill.md"
+    "notes": "notes/general-skills/Trace2Skill.md",
+    "code": "https://github.com/Qwen-Applications/Trace2Skill"
   },
   {
     "name": "XSkill",
@@ -456,7 +481,8 @@
     "summary": "Distills task-level skills and action-level experiences from visual trajectories, then retrieves and adapts both without updating model parameters.",
     "notes": "notes/general-skills/XSkill.md",
     "part": "general-skills",
-    "paper_type": "Agent / skill method"
+    "paper_type": "Agent / skill method",
+    "code": "https://github.com/XSkill-Agent/XSkill"
   },
   {
     "name": "AWM",
@@ -474,7 +500,8 @@
     "pdf": "papers/general-skills/2025/ICML/Agent Workflow Memory.pdf",
     "sha256": "ddc6f6fedec48c88ae743b43a464f7eb4aecaab05acd18c29cfb657ab445ebe4",
     "summary": "Agent Workflow Memory induces reusable workflows from examples and adds them to the agent context. It supports offline induction from training examples and online induction from successful episodes, allowing later tasks to reuse accumulated procedures.",
-    "notes": "notes/general-skills/AWM.md"
+    "notes": "notes/general-skills/AWM.md",
+    "code": "https://github.com/zorazrw/agent-workflow-memory"
   },
   {
     "name": "SkillWeaver",
@@ -492,7 +519,8 @@
     "pdf": "papers/general-skills/2025/arXiv/SkillWeaver - Web Agents can Self-Improve by Discovering and Honing Skills.pdf",
     "sha256": "aa237b4626363fa3de5479ed12bc93434ae9922f15432eca5bbf3444119d7d60",
     "summary": "An exploration process proposes useful website skills, implements them as Playwright Python APIs, and practices and repairs them using execution feedback. Successful APIs form a composable library that a downstream agent can invoke.",
-    "notes": "notes/general-skills/SkillWeaver.md"
+    "notes": "notes/general-skills/SkillWeaver.md",
+    "code": "https://github.com/OSU-NLP-Group/SkillWeaver"
   },
   {
     "name": "ExpeL",
@@ -510,7 +538,8 @@
     "pdf": "papers/general-skills/2024/AAAI/ExpeL - LLM Agents Are Experiential Learners.pdf",
     "sha256": "01e533d81fb4a5f91797c073a9b1929acbaa64da45a592b26563ca7d135024f3",
     "summary": "ExpeL gathers trajectories, extracts natural-language insights from successful and failed experiences, and retrieves relevant successful demonstrations at inference time. Learning occurs in external experience and insight memory rather than through model-weight updates.",
-    "notes": "notes/general-skills/ExpeL.md"
+    "notes": "notes/general-skills/ExpeL.md",
+    "code": "https://github.com/LeapLabTHU/ExpeL"
   },
   {
     "name": "Voyager",
@@ -528,6 +557,7 @@
     "pdf": "papers/general-skills/2024/TMLR/Voyager - An Open-Ended Embodied Agent with Large Language Models.pdf",
     "sha256": "769a4e33ddeeb73870849232eece49afe882c2d146362e33917ccb432ba0efb8",
     "summary": "An automatic curriculum proposes progressively useful Minecraft tasks. GPT-4 generates executable code, repairs it using environment feedback and self-verification, and stores successful programs in a retrievable skill library. Model weights remain fixed.",
-    "notes": "notes/general-skills/Voyager.md"
+    "notes": "notes/general-skills/Voyager.md",
+    "code": "https://github.com/MineDojo/Voyager"
   }
 ]
