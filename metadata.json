@@ -57,6 +57,25 @@
     "code": ""
   },
   {
+    "name": "GeoAgent",
+    "title": "GeoAgent: Learning to Geolocate Everywhere with Reinforced Geographic Characteristics",
+    "year": 2026,
+    "venue": "CVPR 2026",
+    "topic": "Supporting work: visual geolocation and geographic reasoning",
+    "part": "remote-sensing",
+    "paper_type": "Supporting geolocation model and dataset",
+    "arxiv": "https://arxiv.org/abs/2602.12617",
+    "local_version": "v1",
+    "local_version_url": "https://arxiv.org/abs/2602.12617v1",
+    "publication_url": "",
+    "resource": "https://ghost233lism.github.io/GeoAgent-page/",
+    "pdf": "papers/remote-sensing/2026/CVPR/GeoAgent - Learning to Geolocate Everywhere with Reinforced Geographic Characteristics.pdf",
+    "sha256": "c1f6ad6f444eeeb13e857991e8be04f72984f3e55d0509d0803a119d8e0e130e",
+    "summary": "Trains a geolocation vision-language model with human-annotated reasoning and spatial, semantic, and consistency rewards. GeoSeek supports street-view localization; this is supporting geospatial reasoning work.",
+    "notes": "notes/remote-sensing/GeoAgent.md",
+    "code": "https://github.com/HVision-NKU/GeoAgent"
+  },
+  {
     "name": "GeoEvolver",
     "title": "Experience-Driven Multi-Agent Systems Are Training-free Context-aware Earth Observers",
     "year": 2026,
