@@ -5,7 +5,8 @@ Papers and reading notes on remote sensing agents and reusable agent skills.
 The collection contains **37 papers**: **25** in remote sensing and **12** in general-purpose skills, workflows, and experience learning. Each paper has an English note covering the problem, method, experiments, and conclusions.
 
 - [Part I: Remote Sensing Agents](#part-i-remote-sensing-agents)
-- [Part II: General-Purpose Skills](#part-ii-general-purpose-skills)
+- [Part II: EO Agents in 2025–2026 — Benchmark-Centered View](#part-ii-eo-agents-in-20252026--benchmark-centered-view)
+- [Part III: General-Purpose Skills](#part-iii-general-purpose-skills)
 - [Reading Notes](notes/README.md)
 
 ## Part I: Remote Sensing Agents
@@ -52,7 +53,61 @@ Tool-using systems, multi-agent collaboration, agent training, memory evolution,
 | **RS-ChatGPT** — Remote Sensing ChatGPT: Solving Remote Sensing Tasks with ChatGPT and Visual Models | IGARSS 2024 | Language-driven orchestration of visual models | [PDF](papers/remote-sensing/2024/IGARSS/Remote%20Sensing%20ChatGPT%20-%20Solving%20Remote%20Sensing%20Tasks%20with%20ChatGPT%20and%20Visual%20Models.pdf) · [arXiv](https://arxiv.org/abs/2401.09083) · [Publication](https://doi.org/10.1109/IGARSS53475.2024.10640736) · [Code](https://github.com/HaonanGuo/Remote-Sensing-ChatGPT) |
 | **GeoLLM-QA** — Evaluating Tool-Augmented Agents in Remote Sensing Platforms | ICLR 2024 Workshops · ML4RS | State-aware remote sensing platform agent evaluation | [PDF](papers/remote-sensing/2024/ICLR-Workshops/Evaluating%20Tool-Augmented%20Agents%20in%20Remote%20Sensing%20Platforms.pdf) · [arXiv](https://arxiv.org/abs/2405.00709) |
 
-## Part II: General-Purpose Skills
+## Part II: EO Agents in 2025–2026 — Benchmark-Centered View
+
+Updated **2026-09-13**. This column uses *EO agent* for a system that plans, calls tools, executes, verifies, or learns from a multi-step Earth-observation workflow. A model is not treated as an EO agent solely because “Agent” appears in its name. Entries already archived in this repository link to their reading notes; additional recent papers link to primary sources and are not included in the 37-paper archive count above.
+
+### Benchmark map
+
+| Benchmark | Year | Primary capability tested | Scale and tool setting | Representative agents or baselines |
+| --- | --- | --- | --- | --- |
+| **Earth-Bench** | 2025 / ICLR 2026 | Executable, cross-modal EO analysis over RGB imagery, raw spectra, and processed Earth products; both trajectory and final-answer evaluation | 248 expert-curated questions, 13,729 images, 1,345 reference steps, 14 task types, and 104 professional tools | Earth-Agent, OpenEarth-Agent, GeoForge, RS-Claw, HiRS-Agent, RSMeM; [paper](https://arxiv.org/abs/2509.23141) · [code/data](https://github.com/opendatalab/Earth-Agent) |
+| **GeoPlan-Bench** | 2025 | Long-horizon geospatial workflow planning: indispensable tool selection, ordering, structural similarity, and logical completeness | The paper reports 1,244 validated tasks across seven domains and three difficulty levels; later papers sometimes use a 996-task evaluation split | EarthAgent/HTAM, ReAct, Plan-and-Execute, Debate, AFlow, GeoEvolver, GeoForge; [paper](https://arxiv.org/abs/2511.17198) · [code/data](https://github.com/earth-insights/GeoPlan-bench) |
+| **ThinkGeo** | 2025 | Step-level diagnosis of instruction following, tool choice, arguments, summaries, and final answers over optical and SAR tasks | 486 tasks: 436 optical and 50 SAR, with 1,778 expert-verified reasoning steps | ReAct-style LLM agents, OpenEarthAgent, GeoEvolver, GeoForge, HiRS-Agent; [note](notes/remote-sensing/ThinkGeo.md) · [paper](https://arxiv.org/abs/2505.23752) · [code](https://github.com/mbzuai-oryx/ThinkGeo) |
+| **UnivEARTH** | 2025 / Findings of ACL 2026 | Whether an agent can select EO data, generate executable Google Earth Engine code, and derive an evidence-grounded answer | 408 yes/no questions from NASA Earth Observatory articles, spanning more than 15 instruments and data sources | Zero-shot and Reflexion agents using frontier LLMs; [note](notes/remote-sensing/UnivEARTH.md) · [publication](https://aclanthology.org/2026.findings-acl.124/) |
+| **OpenEarth-Bench** | 2026 | Open-environment, full-pipeline EO: data preparation, feature extraction, tool creation, and geospatial analysis | 596 real-world cases across seven application domains; only six essential pretrained model tools are initially supplied | OpenEarth-Agent; [note](notes/remote-sensing/OpenEarth-Agent.md) · [paper](https://arxiv.org/abs/2603.22148) · [code](https://github.com/walking-shadow/OpenEarth-Agent) |
+| **TerraBench** | 2026 | Heterogeneous Earth-system reasoning across EO imagery, gridded data, GIS, simulation, and artifact-backed computation | 403 tasks, three tracks, eight domains, and 24,500 verified execution steps | TerraAgent and ReAct-style LLM backbones; [paper](https://arxiv.org/abs/2606.13148) |
+| **GeoNatureAgent Benchmark** | 2026 / ACM SIGSPATIAL 2026 | Structured tool calling against a production-style environmental geospatial API, including recovery and task rejection | 93 tasks in 18 categories, three environmental indicators, and 16 tools over Spain and Portugal | Nine frontier/open-weight LLM agents; [paper](https://arxiv.org/abs/2606.12821) |
+
+### Agents evaluated on Earth-Bench and GeoPlan-Bench
+
+The numbers below are representative results reported by each paper, not a merged leaderboard. They should be compared only when the benchmark version, task subset, tool inventory, backbone, and retry policy match.
+
+| Agent | Main mechanism | Earth-Bench | GeoPlan-Bench | Other agentic evaluation | Representative reported result |
+| --- | --- | --- | --- | --- | --- |
+| **Earth-Agent** | MCP-based ReAct agent over 104 EO tools | Benchmark originator; AP and IF | — | Earth-Bench-Lite and conventional RS perception benchmarks | With GPT-5, the archived v3 reports final accuracy of **65.99 AP / 62.35 IF**; [note](notes/remote-sensing/Earth-Agent.md) |
+| **EarthAgent / HTAM** | Domain-aligned hierarchical multi-agent planning | — | Benchmark originator | — | Overall **F1_key 0.63**, structural score **0.68**, and holistic Elo **1068.27**, versus ReAct at 0.37 / 0.47 / 962.57; [paper](https://arxiv.org/abs/2511.17198) · [project](https://github.com/earth-insights/EarthAgent) |
+| **GeoEvolver** | Training-free multi-agent exploration plus distilled success/failure constraints | ✓, an Earth-Agent task set | ✓ | ThinkGeo | On GeoPlan-Bench: **F1_key 0.63**, structural 0.45, holistic 1057.40; on ThinkGeo: answer accuracy **46.88**, or **53.74** with image-generation scoring; [note](notes/remote-sensing/GeoEvolver.md) |
+| **OpenEarth-Agent** | Generates and debugs new tools instead of relying only on a fixed registry | ✓ | — | OpenEarth-Bench | With GPT-5 on Earth-Bench: **59.92%** using six essential tools and **67.61%** with the full toolset, versus its reproduced Earth-Agent baseline at 63.16%; [note](notes/remote-sensing/OpenEarth-Agent.md) |
+| **OpenEarthAgent** | Supervised trajectory training for a compact geospatial tool agent | Transfer evaluation | — | ThinkGeo and its 1,169-example evaluation set | Qwen3-4B end-to-end answer accuracy rises from **13.72% to 45.26%**, while exact tool-sequence accuracy rises from 14.71% to 67.24%; [note](notes/remote-sensing/OpenEarthAgent.md) |
+| **RS-Claw** | Progressive exploration of a three-level hierarchical skill/tool tree | ✓, 234-question subset | — | — | Qwen3-32B AP accuracy improves by **12.45 percentage points** over Flat registration while per-question input tokens fall by about **86%**; [note](notes/remote-sensing/RS-Claw.md) |
+| **HiRS-Agent** | Manager-specialist hierarchy, verifier-guided replanning, expert tuning, and hierarchical RL | ✓ | — | ThinkGeo and RS-EXPERT-BENCHMARK | On Earth-Bench with Qwen3-4B, final accuracy rises from **15.73/10.08 to 43.95/45.56** in AP/IF; [note](notes/remote-sensing/HiRS-Agent.md) |
+| **RSMeM** | Hierarchical domain knowledge plus compressed, failure-aware experience memory | ✓, repeated-attempt R@3 | — | — | With DeepSeek-V3.2 at R@3, accuracy reaches **57.89%** versus EarthAgent R@3 at 51.82%; the retry protocol is part of the result; [note](notes/remote-sensing/RSMeM.md) |
+| **GeoForge** | Frozen backbone plus workflow-graph, action-experience, and skill-SOP memories | ✓ | ✓ | ThinkGeo | GPT-5 Earth-Bench accuracy **74.33%** versus Earth-Agent at 63.16%; GeoPlan-Bench **F1_key 0.77**, structural 0.79, holistic 1100.65; ThinkGeo answer accuracy 60.98; [note](notes/remote-sensing/GeoForge.md) |
+
+### Other recent EO-agent directions
+
+| Direction | 2025–2026 work | What it adds | Earth-Bench / GeoPlan-Bench status |
+| --- | --- | --- | --- |
+| Evidence-grounded EO coding | **UnivEARTH** | Executable Google Earth Engine analysis with code-failure accounting and Reflexion | Separate benchmark; no direct Earth-Bench or GeoPlan-Bench result |
+| Specialist collaboration | **GeoLLM-Squad** | Multiple geospatial copilots and workflow memory for remote-sensing tasks | No reported result on either benchmark |
+| Automated algorithm discovery | **GeoEvolve** | Multi-agent discovery and validation of geospatial algorithms | Supporting algorithm-evolution work, not evaluated on either benchmark |
+| Model/tool selection | **REMSA** | Constraint-aware selection of remote-sensing foundation models | Uses its own expert-scored evaluation |
+| Learned agentic MLLMs | **RemoteAgent**, **HiRS-Agent** | Reinforcement learning for intent resolution or long-horizon manager/specialist control | HiRS-Agent: Earth-Bench; RemoteAgent: separate perception/reasoning suites |
+| Tool creation and open environments | **OpenEarth-Agent** | Creates task-specific executable tools and validates multi-stage EO pipelines | Earth-Bench cross-evaluation; no GeoPlan-Bench result |
+| Non-parametric self-evolution | **GeoEvolver**, **GeoForge**, **RSMeM** | Reuses structured experience without updating backbone weights | GeoForge and GeoEvolver cover both benchmark families; RSMeM covers Earth-Bench |
+| Hypothesis generation | **EO-Agents** | Three-agent pipeline over 1,475 NASA datasets for scientific hypothesis generation | Separate scientific-discovery evaluation; [paper](https://arxiv.org/abs/2607.01584) |
+| Heterogeneous Earth-system execution | **TerraAgent** | Joins EO, gridded environmental data, GIS tools, simulators, and provenance | Evaluated on TerraBench, not the two focal benchmarks |
+
+### Comparison cautions
+
+- **Name collision:** Earth-Agent (Earth-Bench), EarthAgent/HTAM (GeoPlan-Bench), OpenEarth-Agent (tool creation), and OpenEarthAgent (compact-agent training) are four different systems.
+- **Earth-Bench variants:** full vs Lite, AP vs IF, 248 vs 234 questions, different unavailable tools, and R@1 vs R@3 can all change the result. For example, the 234-task RS-Claw subset excludes 14 ChangeOS-dependent questions.
+- **GeoPlan-Bench versions:** the HTAM paper reports 1,244 validated tasks, while later work may evaluate a 996-task split. Report the exact split with every score.
+- **Metric mismatch:** final-answer accuracy, tool coverage/order, parameter accuracy, `F1_key`, structural similarity, and holistic Elo measure different failure modes and should not be averaged into one score.
+- **Current evidence:** most 2026 entries remain preprints. Earth-Agent (ICLR 2026), HiRS-Agent (ACM MM 2026), RSMeM (ACL 2026), UnivEARTH (Findings of ACL 2026), and GeoNatureAgent Benchmark (SIGSPATIAL 2026) have archival venue records; preprint results should be treated as version-specific.
+
+## Part III: General-Purpose Skills
 
 Skill extraction, validation, routing, executable libraries, workflow memory, and experience learning.
 
