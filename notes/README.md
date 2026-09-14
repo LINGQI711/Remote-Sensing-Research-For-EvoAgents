@@ -8,6 +8,7 @@ Each note covers the problem, method, experiments, and conclusions.
 
 - [AgenticRS: Agentic AI for Remote Sensing: Technical Challenges and Research Directions](remote-sensing/AgenticRS.md)
 - [Earth-Agent: Earth-Agent: Unlocking the Full Landscape of Earth Observation with Agents](remote-sensing/Earth-Agent.md)
+- [Earth-Agent-Pro: Earth-Agent-Pro: Towards Real-World Full-Chain Earth Observation with Agents](remote-sensing/Earth-Agent-Pro.md)
 - [GaiaAgent: Towards comprehensive multi-task land cover change detection leveraging vision-language model and LLM-driven agents](remote-sensing/GaiaAgent.md)
 - [GeoAgent: GeoAgent: Learning to Geolocate Everywhere with Reinforced Geographic Characteristics](remote-sensing/GeoAgent.md)
 - [GeoEvolver: Experience-Driven Multi-Agent Systems Are Training-free Context-aware Earth Observers](remote-sensing/GeoEvolver.md)

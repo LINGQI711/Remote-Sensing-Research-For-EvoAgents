@@ -38,6 +38,25 @@
     "code": "https://github.com/opendatalab/Earth-Agent"
   },
   {
+    "name": "Earth-Agent-Pro",
+    "title": "Earth-Agent-Pro: Towards Real-World Full-Chain Earth Observation with Agents",
+    "year": 2026,
+    "venue": "arXiv preprint 2026",
+    "topic": "Open-world, full-chain EO planning and execution",
+    "part": "remote-sensing",
+    "paper_type": "Agent system and benchmark",
+    "arxiv": "https://arxiv.org/abs/2609.12533",
+    "local_version": "v1",
+    "local_version_url": "https://arxiv.org/abs/2609.12533v1",
+    "publication_url": "https://arxiv.org/abs/2609.12533",
+    "resource": "",
+    "pdf": "papers/remote-sensing/2026/arXiv/Earth-Agent-Pro - Towards Real-World Full-Chain Earth Observation with Agents.pdf",
+    "sha256": "56bf5e91cf7d988e80ca3ca021bb0acf9a21b9701fd009d9ec65b7669e51a79e",
+    "summary": "Earth-Agent-Pro uses expert-authored skills, workflow-centered evidence memory, localized suffix repair, and separate planner and executor adapters for full-chain open-world EO execution. Earth-Bench-Pro expands 248 task cores into 744 matched instruction-following, autonomous-planning, and open-world questions.",
+    "notes": "notes/remote-sensing/Earth-Agent-Pro.md",
+    "code": ""
+  },
+  {
     "name": "GaiaAgent",
     "title": "Towards comprehensive multi-task land cover change detection leveraging vision-language model and LLM-driven agents",
     "year": 2026,

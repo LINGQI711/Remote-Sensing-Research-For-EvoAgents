@@ -4,6 +4,7 @@
 
 - [AgenticRS: Agentic AI for Remote Sensing: Technical Challenges and Research Directions](AgenticRS.md)
 - [Earth-Agent: Earth-Agent: Unlocking the Full Landscape of Earth Observation with Agents](Earth-Agent.md)
+- [Earth-Agent-Pro: Earth-Agent-Pro: Towards Real-World Full-Chain Earth Observation with Agents](Earth-Agent-Pro.md)
 - [GaiaAgent: Towards comprehensive multi-task land cover change detection leveraging vision-language model and LLM-driven agents](GaiaAgent.md)
 - [GeoAgent: GeoAgent: Learning to Geolocate Everywhere with Reinforced Geographic Characteristics](GeoAgent.md)
 - [GeoEvolver: Experience-Driven Multi-Agent Systems Are Training-free Context-aware Earth Observers](GeoEvolver.md)
