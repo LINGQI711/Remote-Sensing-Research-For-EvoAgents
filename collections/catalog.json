@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "updated": "2026-09-27",
+  "collections": {
+    "remote-sensing-agents": [
+      "AgenticRS", "Earth-Agent", "Earth-Agent-Pro", "GaiaAgent", "GeoAgent", "GeoEvolver", "GeoForge", "GeoMMAgent", "HiRS-Agent", "MapAgent", "OpenEarth-Agent", "OpenEarthAgent", "RemoteAgent", "RS-Agent", "RS-Claw", "RSMeM", "UnivEARTH", "GeoEvolve", "Multi-Agent-Geospatial-Copilots", "REMSA", "RingMo-Agent", "ThinkGeo", "Change-Agent", "GeoLLM-Engine", "GeoLLM-QA", "Remote-Sensing-ChatGPT"
+    ],
+    "training-free-agent-learning": [
+      "Earth-Agent", "GeoEvolver", "GeoForge", "OpenEarth-Agent", "RS-Claw", "RSMeM", "EvoSkill", "SkillCAT", "SkillOpt", "Trace2Skill", "XSkill", "AWM", "SkillWeaver", "ExpeL", "Voyager"
+    ],
+    "agent-memory": [
+      "Earth-Agent-Pro", "GeoEvolver", "GeoForge", "RSMeM", "Multi-Agent-Geospatial-Copilots", "MemSkill", "XSkill", "AWM", "ExpeL"
+    ],
+    "self-evolving-agents": [
+      "GeoEvolver", "GeoForge", "RSMeM", "GeoEvolve", "EvoSkill", "MemSkill", "SkillCAT", "SkillOpt", "Trace2Skill", "XSkill", "SkillWeaver"
+    ],
+    "agent-skills": [
+      "Earth-Agent-Pro", "GeoForge", "RS-Claw", "EvoSkill", "MemSkill", "MMSkills", "SkillCAT", "SkillOpt", "SkillsBench", "Trace2Skill", "XSkill", "SkillWeaver", "Voyager"
+    ],
+    "agent-training-rl": [
+      "Earth-Agent-Pro", "GeoAgent", "HiRS-Agent", "OpenEarthAgent", "RemoteAgent", "MemSkill"
+    ],
+    "multi-agent-orchestration": [
+      "Earth-Agent-Pro", "GaiaAgent", "GeoEvolver", "GeoMMAgent", "HiRS-Agent", "MapAgent", "GeoEvolve", "Multi-Agent-Geospatial-Copilots", "EvoSkill"
+    ],
+    "benchmarks-evaluation": [
+      "Earth-Agent", "Earth-Agent-Pro", "GeoMMAgent", "OpenEarth-Agent", "OpenEarthAgent", "REMSA", "ThinkGeo", "UnivEARTH", "GeoLLM-Engine", "GeoLLM-QA", "SkillsBench"
+    ]
+  }
+}

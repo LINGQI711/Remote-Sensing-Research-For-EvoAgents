@@ -7,6 +7,9 @@
 !/notes/README.md
 !/notes/remote-sensing/README.md
 !/notes/general-skills/README.md
+!/collections/README.md
+!/collections/catalog.json
+!/collections/*/README.md
 !/papers/remote-sensing/2026/ICLR/Earth-Agent - Unlocking the Full Landscape of Earth Observation with Agents.pdf
 !/notes/remote-sensing/Earth-Agent.md
 !/papers/remote-sensing/2026/arXiv/Earth-Agent-Pro - Towards Real-World Full-Chain Earth Observation with Agents.pdf

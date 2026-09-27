@@ -1,142 +1,49 @@
-# Remote-Sensing-Research-For-EvoAgents
+# Agent Mechanism Research Library
 
-Papers and reading notes on remote sensing agents and reusable agent skills.
+A structured paper library for studying **how agents learn, remember, evolve, acquire skills, coordinate, and are evaluated**, with remote sensing as a major application domain.
 
-The collection contains **38 papers**: **26** in remote sensing and **12** in general-purpose skills, workflows, and experience learning. Each paper has an English note covering the problem, method, experiments, and conclusions.
+The repository currently contains **38 reviewed papers**: **26 remote-sensing papers** and **12 general agent-mechanism papers**. Every archived paper has a local PDF, structured metadata, and an English reading note.
 
-- [Part I: Remote Sensing Agents](#part-i-remote-sensing-agents)
-- [Part II: EO Agents in 2025–2026 — Benchmark-Centered View](#part-ii-eo-agents-in-20252026--benchmark-centered-view)
-- [Part III: General-Purpose Skills](#part-iii-general-purpose-skills)
-- [Reading Notes](notes/README.md)
+## Research collections
 
-## Part I: Remote Sensing Agents
+| Collection | Core question | Entry point |
+| --- | --- | --- |
+| Remote Sensing Agents | How are agents designed and evaluated for Earth observation and geospatial workflows? | [Open collection](collections/remote-sensing-agents/README.md) |
+| Training-Free Agent Learning | How can a frozen backbone improve through experience, prompts, workflows, tools, or external state? | [Open collection](collections/training-free-agent-learning/README.md) |
+| Agent Memory | What should an agent store, retrieve, update, compress, and forget? | [Open collection](collections/agent-memory/README.md) |
+| Self-Evolving Agents | How can agents revise their own memory, skills, workflows, or tool-use policies over time? | [Open collection](collections/self-evolving-agents/README.md) |
+| Agent Skills | How are reusable skills represented, discovered, validated, routed, and composed? | [Open collection](collections/agent-skills/README.md) |
+| Agent Training and RL | Which capabilities require parameter updates, supervised trajectories, or reinforcement learning? | [Open collection](collections/agent-training-rl/README.md) |
+| Multi-Agent and Orchestration | When does role specialization, hierarchy, debate, or manager-worker coordination help? | [Open collection](collections/multi-agent-orchestration/README.md) |
+| Benchmarks and Evaluation | How should agent outcomes, trajectories, tools, parameters, cost, and transfer be measured? | [Open collection](collections/benchmarks-evaluation/README.md) |
 
-Tool-using systems, multi-agent collaboration, agent training, memory evolution, and evaluation. GeoEvolve and RingMo-Agent are included as supporting work on algorithm and foundation-model evolution. MapAgent is supporting work on map-based geospatial tool orchestration, rather than remote-sensing image analysis. AgenticRS provides an EO-native agent design perspective.
+## Repository map
 
-### 2026
+```text
+.
+├── README.md                         # This top-level catalog
+├── collections/                      # Cross-cutting research-topic indexes
+│   ├── README.md                     # Taxonomy and maintenance rules
+│   ├── catalog.json                  # Machine-readable many-to-many membership
+│   └── <research-topic>/README.md    # One curated topic collection
+├── papers/                           # Canonical local PDF archive
+│   ├── remote-sensing/
+│   └── general-skills/
+├── notes/                            # Canonical paper-by-paper reading notes
+│   ├── remote-sensing/
+│   └── general-skills/
+└── metadata.json                     # Canonical bibliographic and file metadata
+```
 
-| Paper | Venue | Focus | Links |
-| --- | --- | --- | --- |
-| **AgenticRS** — Agentic AI for Remote Sensing: Technical Challenges and Research Directions | arXiv preprint 2026 | EO-native agent design and workflow validity | [PDF](papers/remote-sensing/2026/arXiv/Agentic%20AI%20for%20Remote%20Sensing%20-%20Technical%20Challenges%20and%20Research%20Directions.pdf) · [arXiv](https://arxiv.org/abs/2604.24919) |
-| **Earth-Agent** — Earth-Agent: Unlocking the Full Landscape of Earth Observation with Agents | ICLR 2026 | Multimodal Earth observation tools and evaluation | [PDF](papers/remote-sensing/2026/ICLR/Earth-Agent%20-%20Unlocking%20the%20Full%20Landscape%20of%20Earth%20Observation%20with%20Agents.pdf) · [arXiv](https://arxiv.org/abs/2509.23141) · [Publication](https://openreview.net/forum?id=dkIXAbWuxO) · [Code](https://github.com/opendatalab/Earth-Agent) |
-| **Earth-Agent-Pro** — Earth-Agent-Pro: Towards Real-World Full-Chain Earth Observation with Agents | arXiv preprint 2026 | Open-world, full-chain EO planning and execution | [PDF](papers/remote-sensing/2026/arXiv/Earth-Agent-Pro%20-%20Towards%20Real-World%20Full-Chain%20Earth%20Observation%20with%20Agents.pdf) · [arXiv](https://arxiv.org/abs/2609.12533) |
-| **GaiaAgent** — Towards comprehensive multi-task land cover change detection leveraging vision-language model and LLM-driven agents | ISPRS Journal of Photogrammetry and Remote Sensing | Multi-agent 2D/3D land-cover change analysis | [PDF](papers/remote-sensing/2026/ISPRS-JPRS/Towards%20comprehensive%20multi-task%20land%20cover%20change%20detection%20leveraging%20vision-language%20model%20and%20LLM-driven%20agents.pdf) · [Publication](https://doi.org/10.1016/j.isprsjprs.2026.05.025) |
-| **GeoAgent** — GeoAgent: Learning to Geolocate Everywhere with Reinforced Geographic Characteristics | CVPR 2026 | Supporting work: visual geolocation and geographic reasoning | [PDF](papers/remote-sensing/2026/CVPR/GeoAgent%20-%20Learning%20to%20Geolocate%20Everywhere%20with%20Reinforced%20Geographic%20Characteristics.pdf) · [arXiv](https://arxiv.org/abs/2602.12617) · [Code](https://github.com/HVision-NKU/GeoAgent) |
-| **GeoEvolver** — Experience-Driven Multi-Agent Systems Are Training-free Context-aware Earth Observers | arXiv preprint | Experience-driven exploration and memory | [PDF](papers/remote-sensing/2026/arXiv/Experience-Driven%20Multi-Agent%20Systems%20Are%20Training-free%20Context-aware%20Earth%20Observers.pdf) · [arXiv](https://arxiv.org/abs/2602.02559) |
-| **GeoForge** — GeoForge: Non-Parametric Self-Evolving Agents for Earth-Observation Reasoning | arXiv preprint 2026 | Non-parametric evolution for Earth observation | [PDF](papers/remote-sensing/2026/arXiv/GeoForge%20-%20Non-Parametric%20Self-Evolving%20Agents%20for%20Earth-Observation%20Reasoning.pdf) · [arXiv](https://arxiv.org/abs/2608.10494) |
-| **GeoMMAgent** — GeoMMBench and GeoMMAgent: Toward Expert-Level Multimodal Intelligence in Geoscience and Remote Sensing | CVPR 2026 (Highlight) | Expert multimodal geoscience reasoning | [PDF](papers/remote-sensing/2026/CVPR/GeoMMBench%20and%20GeoMMAgent%20-%20Toward%20Expert-Level%20Multimodal%20Intelligence%20in%20Geoscience%20and%20Remote%20Sensing.pdf) · [arXiv](https://arxiv.org/abs/2604.08896) · [Publication](https://openaccess.thecvf.com/content/CVPR2026/papers/Xiao_GeoMMBench_and_GeoMMAgent_Toward_Expert-Level_Multimodal_Intelligence_in_Geoscience_and_CVPR_2026_paper.pdf) · [Code](https://github.com/Shihao-Cheng/GeoMMAgent) |
-| **HiRS-Agent** — HiRS-Agent: A Hierarchical Multi-Agent System for Reliable Long-Horizon Remote Sensing Task Solving | ACM Multimedia 2026 (accepted) | Hierarchical remote sensing agents and reliable execution | [PDF](papers/remote-sensing/2026/ACM-MM/HiRS-Agent%20-%20A%20Hierarchical%20Multi-Agent%20System%20for%20Reliable%20Long-Horizon%20Remote%20Sensing%20Task%20Solving.pdf) · [arXiv](https://arxiv.org/abs/2608.30672) |
-| **MapAgent** — MapAgent: A Hierarchical Agent for Geospatial Reasoning with Dynamic Map Tool Integration | Findings of EACL 2026 | Supporting work: hierarchical map-tool geospatial reasoning | [PDF](papers/remote-sensing/2026/EACL-Findings/MapAgent%20-%20A%20Hierarchical%20Agent%20for%20Geospatial%20Reasoning%20with%20Dynamic%20Map%20Tool%20Integration.pdf) · [arXiv](https://arxiv.org/abs/2509.05933) · [Publication](https://aclanthology.org/2026.findings-eacl.67/) · [Code](https://github.com/Hasebul/MapAgent) |
-| **OpenEarth-Agent** — OpenEarth-Agent: From Tool Calling to Tool Creation for Open-Environment Earth Observation | arXiv preprint 2026 | Tool creation for open-environment Earth observation | [PDF](papers/remote-sensing/2026/arXiv/OpenEarth-Agent%20-%20From%20Tool%20Calling%20to%20Tool%20Creation%20for%20Open-Environment%20Earth%20Observation.pdf) · [arXiv](https://arxiv.org/abs/2603.22148) |
-| **OpenEarthAgent** — OpenEarthAgent: A Unified Framework for Tool-Augmented Geospatial Agents | arXiv preprint | Training compact geospatial tool-using agents | [PDF](papers/remote-sensing/2026/arXiv/OpenEarthAgent%20-%20A%20Unified%20Framework%20for%20Tool-Augmented%20Geospatial%20Agents.pdf) · [arXiv](https://arxiv.org/abs/2602.17665) · [Code](https://github.com/mbzuai-oryx/OpenEarthAgent) |
-| **RemoteAgent** — RemoteAgent: Bridging Vague Human Intents and Earth Observation with RL-based Agentic MLLMs | arXiv preprint | Resolving vague intents with reinforcement learning | [PDF](papers/remote-sensing/2026/arXiv/RemoteAgent%20-%20Bridging%20Vague%20Human%20Intents%20and%20Earth%20Observation%20with%20RL-based%20Agentic%20MLLMs.pdf) · [arXiv](https://arxiv.org/abs/2604.07765) · [Code](https://github.com/1e12Leon/RemoteAgent) |
-| **RS-Agent** — RS-Agent: Automating Remote Sensing Tasks through Intelligent Agent | Science China Information Sciences | Domain knowledge and remote sensing tool orchestration | [PDF](papers/remote-sensing/2026/SCIS/RS-Agent%20-%20Automating%20Remote%20Sensing%20Tasks%20through%20Intelligent%20Agent.pdf) · [arXiv](https://arxiv.org/abs/2406.07089) · [Publication](https://doi.org/10.1007/s11432-026-5026-5) · [Code](https://github.com/IntelliSensing/RS-Agent) |
-| **RS-Claw** — RS-Claw: Progressive Active Tool Exploration via Hierarchical Skill Trees for Remote Sensing Agents | arXiv preprint 2026 | Hierarchical skills and active tool exploration | [PDF](papers/remote-sensing/2026/arXiv/RS-Claw%20-%20Progressive%20Active%20Tool%20Exploration%20via%20Hierarchical%20Skill%20Trees%20for%20Remote%20Sensing%20Agents.pdf) · [arXiv](https://arxiv.org/abs/2605.13391) |
-| **RSMeM** — RSMeM: Knowledge-Enhanced Memory Evolution for Remote Sensing Agents with Systematic Evaluation | ACL 2026 | Knowledge-guided memory evolution | [PDF](papers/remote-sensing/2026/ACL/RSMeM%20-%20Knowledge-Enhanced%20Memory%20Evolution%20for%20Remote%20Sensing%20Agents%20with%20Systematic%20Evaluation.pdf) · [arXiv](https://arxiv.org/abs/2607.24772) · [Publication](https://aclanthology.org/2026.acl-long.1519/) · [Code](https://github.com/AI9Stars/RSMeM) |
-| **UnivEARTH** — Towards LLM Agents for Earth Observation | Findings of ACL 2026 | Evidence-grounded Earth observation coding benchmark | [PDF](papers/remote-sensing/2026/ACL-Findings/Towards%20LLM%20Agents%20for%20Earth%20Observation.pdf) · [arXiv](https://arxiv.org/abs/2504.12110) · [Publication](https://aclanthology.org/2026.findings-acl.124/) |
+## Canonical indexes
 
-### 2025
+- [All research collections](collections/README.md)
+- [All paper reading notes](notes/README.md)
+- [Remote-sensing notes](notes/remote-sensing/README.md)
+- [General mechanism and skill notes](notes/general-skills/README.md)
+- [Machine-readable paper metadata](metadata.json)
+- [Machine-readable collection membership](collections/catalog.json)
 
-| Paper | Venue | Focus | Links |
-| --- | --- | --- | --- |
-| **GeoEvolve** — GeoEvolve: Automating Geospatial Model Discovery via Multi-Agent Large Language Models | arXiv preprint 2025 | Automated geospatial algorithm discovery | [PDF](papers/remote-sensing/2025/arXiv/GeoEvolve%20-%20Automating%20Geospatial%20Model%20Discovery%20via%20Multi-Agent%20Large%20Language%20Models.pdf) · [arXiv](https://arxiv.org/abs/2509.21593) |
-| **GeoLLM-Squad** — Multi-Agent Geospatial Copilots for Remote Sensing Workflows | IGARSS 2025 | Specialist collaboration and workflow memory | [PDF](papers/remote-sensing/2025/IGARSS/Multi-Agent%20Geospatial%20Copilots%20for%20Remote%20Sensing%20Workflows.pdf) · [arXiv](https://arxiv.org/abs/2501.16254) · [Publication](https://www.2025.ieeeigarss.org/view_paper.php?PaperNum=5591&SessionID=1614) |
-| **REMSA** — REMSA: Foundation Model Selection for Remote Sensing via a Constraint-Aware Agent | arXiv preprint | Constraint-aware remote sensing foundation-model selection | [PDF](papers/remote-sensing/2025/arXiv/REMSA%20-%20Foundation%20Model%20Selection%20for%20Remote%20Sensing%20via%20a%20Constraint-Aware%20Agent.pdf) · [arXiv](https://arxiv.org/abs/2511.17442) · [Code](https://github.com/be-chen/REMSA) |
-| **RingMo-Agent** — RingMo-Agent: A Unified Remote Sensing Foundation Model for Multi-Platform and Multi-Modal Reasoning | arXiv preprint 2025 | Multi-platform, multi-modal remote sensing foundation models | [PDF](papers/remote-sensing/2025/arXiv/RingMo-Agent%20-%20A%20Unified%20Remote%20Sensing%20Foundation%20Model%20for%20Multi-Platform%20and%20Multi-Modal%20Reasoning.pdf) · [arXiv](https://arxiv.org/abs/2507.20776) |
-| **ThinkGeo** — ThinkGeo: Evaluating Tool-Augmented Agents for Remote Sensing Tasks | arXiv preprint | Step-level evaluation of remote sensing tool use | [PDF](papers/remote-sensing/2025/arXiv/ThinkGeo%20-%20Evaluating%20Tool-Augmented%20Agents%20for%20Remote%20Sensing%20Tasks.pdf) · [arXiv](https://arxiv.org/abs/2505.23752) · [Code](https://github.com/mbzuai-oryx/ThinkGeo) |
+## Organization principle
 
-### 2024
-
-| Paper | Venue | Focus | Links |
-| --- | --- | --- | --- |
-| **Change-Agent** — Change-Agent: Towards Interactive Comprehensive Remote Sensing Change Interpretation and Analysis | IEEE Transactions on Geoscience and Remote Sensing | Interactive change detection and description | [PDF](papers/remote-sensing/2024/IEEE-TGRS/Change-Agent%20-%20Towards%20Interactive%20Comprehensive%20Remote%20Sensing%20Change%20Interpretation%20and%20Analysis.pdf) · [arXiv](https://arxiv.org/abs/2403.19646) · [Publication](https://doi.org/10.1109/TGRS.2024.3425815) · [Code](https://github.com/Chen-Yang-Liu/Change-Agent) |
-| **GeoLLM-Engine** — GeoLLM-Engine: A Realistic Environment for Building Geospatial Copilots | CVPR 2024 Workshops · EarthVision | Executable environments for geospatial copilots | [PDF](papers/remote-sensing/2024/CVPR-Workshops/GeoLLM-Engine%20-%20A%20Realistic%20Environment%20for%20Building%20Geospatial%20Copilots.pdf) · [arXiv](https://arxiv.org/abs/2404.15500) · [Publication](https://openaccess.thecvf.com/content/CVPR2024W/EarthVision/html/Singh_GeoLLM-Engine_A_Realistic_Environment_for_Building_Geospatial_Copilots_CVPRW_2024_paper.html) |
-| **RS-ChatGPT** — Remote Sensing ChatGPT: Solving Remote Sensing Tasks with ChatGPT and Visual Models | IGARSS 2024 | Language-driven orchestration of visual models | [PDF](papers/remote-sensing/2024/IGARSS/Remote%20Sensing%20ChatGPT%20-%20Solving%20Remote%20Sensing%20Tasks%20with%20ChatGPT%20and%20Visual%20Models.pdf) · [arXiv](https://arxiv.org/abs/2401.09083) · [Publication](https://doi.org/10.1109/IGARSS53475.2024.10640736) · [Code](https://github.com/HaonanGuo/Remote-Sensing-ChatGPT) |
-| **GeoLLM-QA** — Evaluating Tool-Augmented Agents in Remote Sensing Platforms | ICLR 2024 Workshops · ML4RS | State-aware remote sensing platform agent evaluation | [PDF](papers/remote-sensing/2024/ICLR-Workshops/Evaluating%20Tool-Augmented%20Agents%20in%20Remote%20Sensing%20Platforms.pdf) · [arXiv](https://arxiv.org/abs/2405.00709) |
-
-## Part II: EO Agents in 2025–2026 — Benchmark-Centered View
-
-Updated **2026-09-14**. This column uses *EO agent* for a system that plans, calls tools, executes, verifies, or learns from a multi-step Earth-observation workflow. A model is not treated as an EO agent solely because “Agent” appears in its name. Entries already archived in this repository link to their reading notes; additional recent papers link to primary sources and are not included in the 38-paper archive count above.
-
-### Benchmark map
-
-| Benchmark | Year | Primary capability tested | Scale and tool setting | Representative agents or baselines |
-| --- | --- | --- | --- | --- |
-| **Earth-Bench** | 2025 / ICLR 2026 | Executable, cross-modal EO analysis over RGB imagery, raw spectra, and processed Earth products; both trajectory and final-answer evaluation | 248 expert-curated questions, 13,729 images, 1,345 reference steps, 14 task types, and 104 professional tools | Earth-Agent, OpenEarth-Agent, GeoForge, RS-Claw, HiRS-Agent, RSMeM; [paper](https://arxiv.org/abs/2509.23141) · [code/data](https://github.com/opendatalab/Earth-Agent) |
-| **Earth-Bench-Pro** | 2026 | Matched evaluation of instruction following, autonomous planning, and open-world execution from data discovery to open-ended evidence-grounded answers | 248 scientific task cores instantiated as 744 questions, 5,295 reference tool calls, and 112 tools; the 248 open-world cases include runtime acquisition or discovery | Earth-Agent-Pro, ReAct, AFlow, and OpenEarthAgent under controlled backbones; [note](notes/remote-sensing/Earth-Agent-Pro.md) · [paper](https://arxiv.org/abs/2609.12533) |
-| **GeoPlan-Bench** | 2025 | Long-horizon geospatial workflow planning: indispensable tool selection, ordering, structural similarity, and logical completeness | The paper reports 1,244 validated tasks across seven domains and three difficulty levels; later papers sometimes use a 996-task evaluation split | EarthAgent/HTAM, ReAct, Plan-and-Execute, Debate, AFlow, GeoEvolver, GeoForge; [paper](https://arxiv.org/abs/2511.17198) · [code/data](https://github.com/earth-insights/GeoPlan-bench) |
-| **ThinkGeo** | 2025 | Step-level diagnosis of instruction following, tool choice, arguments, summaries, and final answers over optical and SAR tasks | 486 tasks: 436 optical and 50 SAR, with 1,778 expert-verified reasoning steps | ReAct-style LLM agents, OpenEarthAgent, GeoEvolver, GeoForge, HiRS-Agent; [note](notes/remote-sensing/ThinkGeo.md) · [paper](https://arxiv.org/abs/2505.23752) · [code](https://github.com/mbzuai-oryx/ThinkGeo) |
-| **UnivEARTH** | 2025 / Findings of ACL 2026 | Whether an agent can select EO data, generate executable Google Earth Engine code, and derive an evidence-grounded answer | 408 yes/no questions from NASA Earth Observatory articles, spanning more than 15 instruments and data sources | Zero-shot and Reflexion agents using frontier LLMs; [note](notes/remote-sensing/UnivEARTH.md) · [publication](https://aclanthology.org/2026.findings-acl.124/) |
-| **OpenEarth-Bench** | 2026 | Open-environment, full-pipeline EO: data preparation, feature extraction, tool creation, and geospatial analysis | 596 real-world cases across seven application domains; only six essential pretrained model tools are initially supplied | OpenEarth-Agent; [note](notes/remote-sensing/OpenEarth-Agent.md) · [paper](https://arxiv.org/abs/2603.22148) · [code](https://github.com/walking-shadow/OpenEarth-Agent) |
-| **TerraBench** | 2026 | Heterogeneous Earth-system reasoning across EO imagery, gridded data, GIS, simulation, and artifact-backed computation | 403 tasks, three tracks, eight domains, and 24,500 verified execution steps | TerraAgent and ReAct-style LLM backbones; [paper](https://arxiv.org/abs/2606.13148) |
-| **GeoNatureAgent Benchmark** | 2026 / ACM SIGSPATIAL 2026 | Structured tool calling against a production-style environmental geospatial API, including recovery and task rejection | 93 tasks in 18 categories, three environmental indicators, and 16 tools over Spain and Portugal | Nine frontier/open-weight LLM agents; [paper](https://arxiv.org/abs/2606.12821) |
-
-### Agents evaluated on Earth-Bench and GeoPlan-Bench
-
-The numbers below are representative results reported by each paper, not a merged leaderboard. They should be compared only when the benchmark version, task subset, tool inventory, backbone, and retry policy match.
-
-| Agent | Main mechanism | Earth-Bench | GeoPlan-Bench | Other agentic evaluation | Representative reported result |
-| --- | --- | --- | --- | --- | --- |
-| **Earth-Agent** | MCP-based ReAct agent over 104 EO tools | Benchmark originator; AP and IF | — | Earth-Bench-Lite and conventional RS perception benchmarks | With GPT-5, the archived v3 reports final accuracy of **65.99 AP / 62.35 IF**; [note](notes/remote-sensing/Earth-Agent.md) |
-| **Earth-Agent-Pro** | Skill-guided Plan-and-Execute, workflow/evidence memory, localized suffix repair, and role-specific adapters | Extends its 248 task cores into Earth-Bench-Pro | — | Earth-Bench-Pro and OpenEarthAgent benchmark transfer | On Earth-Bench-OW with a shared GPT-5 backbone, LLM-as-Judge accuracy is **66.13%**, 20.95 points above ReAct, while Tools-In-Order improves by 24.44 points; [note](notes/remote-sensing/Earth-Agent-Pro.md) |
-| **EarthAgent / HTAM** | Domain-aligned hierarchical multi-agent planning | — | Benchmark originator | — | Overall **F1_key 0.63**, structural score **0.68**, and holistic Elo **1068.27**, versus ReAct at 0.37 / 0.47 / 962.57; [paper](https://arxiv.org/abs/2511.17198) · [project](https://github.com/earth-insights/EarthAgent) |
-| **GeoEvolver** | Training-free multi-agent exploration plus distilled success/failure constraints | ✓, an Earth-Agent task set | ✓ | ThinkGeo | On GeoPlan-Bench: **F1_key 0.63**, structural 0.45, holistic 1057.40; on ThinkGeo: answer accuracy **46.88**, or **53.74** with image-generation scoring; [note](notes/remote-sensing/GeoEvolver.md) |
-| **OpenEarth-Agent** | Generates and debugs new tools instead of relying only on a fixed registry | ✓ | — | OpenEarth-Bench | With GPT-5 on Earth-Bench: **59.92%** using six essential tools and **67.61%** with the full toolset, versus its reproduced Earth-Agent baseline at 63.16%; [note](notes/remote-sensing/OpenEarth-Agent.md) |
-| **OpenEarthAgent** | Supervised trajectory training for a compact geospatial tool agent | Transfer evaluation | — | ThinkGeo and its 1,169-example evaluation set | Qwen3-4B end-to-end answer accuracy rises from **13.72% to 45.26%**, while exact tool-sequence accuracy rises from 14.71% to 67.24%; [note](notes/remote-sensing/OpenEarthAgent.md) |
-| **RS-Claw** | Progressive exploration of a three-level hierarchical skill/tool tree | ✓, 234-question subset | — | — | Qwen3-32B AP accuracy improves by **12.45 percentage points** over Flat registration while per-question input tokens fall by about **86%**; [note](notes/remote-sensing/RS-Claw.md) |
-| **HiRS-Agent** | Manager-specialist hierarchy, verifier-guided replanning, expert tuning, and hierarchical RL | ✓ | — | ThinkGeo and RS-EXPERT-BENCHMARK | On Earth-Bench with Qwen3-4B, final accuracy rises from **15.73/10.08 to 43.95/45.56** in AP/IF; [note](notes/remote-sensing/HiRS-Agent.md) |
-| **RSMeM** | Hierarchical domain knowledge plus compressed, failure-aware experience memory | ✓, repeated-attempt R@3 | — | — | With DeepSeek-V3.2 at R@3, accuracy reaches **57.89%** versus EarthAgent R@3 at 51.82%; the retry protocol is part of the result; [note](notes/remote-sensing/RSMeM.md) |
-| **GeoForge** | Frozen backbone plus workflow-graph, action-experience, and skill-SOP memories | ✓ | ✓ | ThinkGeo | GPT-5 Earth-Bench accuracy **74.33%** versus Earth-Agent at 63.16%; GeoPlan-Bench **F1_key 0.77**, structural 0.79, holistic 1100.65; ThinkGeo answer accuracy 60.98; [note](notes/remote-sensing/GeoForge.md) |
-
-### Other recent EO-agent directions
-
-| Direction | 2025–2026 work | What it adds | Earth-Bench / GeoPlan-Bench status |
-| --- | --- | --- | --- |
-| Evidence-grounded EO coding | **UnivEARTH** | Executable Google Earth Engine analysis with code-failure accounting and Reflexion | Separate benchmark; no direct Earth-Bench or GeoPlan-Bench result |
-| Specialist collaboration | **GeoLLM-Squad** | Multiple geospatial copilots and workflow memory for remote-sensing tasks | No reported result on either benchmark |
-| Automated algorithm discovery | **GeoEvolve** | Multi-agent discovery and validation of geospatial algorithms | Supporting algorithm-evolution work, not evaluated on either benchmark |
-| Model/tool selection | **REMSA** | Constraint-aware selection of remote-sensing foundation models | Uses its own expert-scored evaluation |
-| Learned agentic MLLMs | **RemoteAgent**, **HiRS-Agent** | Reinforcement learning for intent resolution or long-horizon manager/specialist control | HiRS-Agent: Earth-Bench; RemoteAgent: separate perception/reasoning suites |
-| Tool creation and open environments | **OpenEarth-Agent** | Creates task-specific executable tools and validates multi-stage EO pipelines | Earth-Bench cross-evaluation; no GeoPlan-Bench result |
-| Non-parametric self-evolution | **GeoEvolver**, **GeoForge**, **RSMeM** | Reuses structured experience without updating backbone weights | GeoForge and GeoEvolver cover both benchmark families; RSMeM covers Earth-Bench |
-| Hypothesis generation | **EO-Agents** | Three-agent pipeline over 1,475 NASA datasets for scientific hypothesis generation | Separate scientific-discovery evaluation; [paper](https://arxiv.org/abs/2607.01584) |
-| Heterogeneous Earth-system execution | **TerraAgent** | Joins EO, gridded environmental data, GIS tools, simulators, and provenance | Evaluated on TerraBench, not the two focal benchmarks |
-
-### Comparison cautions
-
-- **Name collision:** Earth-Agent (Earth-Bench), its full-chain successor Earth-Agent-Pro (Earth-Bench-Pro), EarthAgent/HTAM (GeoPlan-Bench), OpenEarth-Agent (tool creation), and OpenEarthAgent (compact-agent training) are distinct systems.
-- **Earth-Bench variants:** full vs Lite, AP vs IF, 248 vs 234 questions, different unavailable tools, and R@1 vs R@3 can all change the result. For example, the 234-task RS-Claw subset excludes 14 ChangeOS-dependent questions.
-- **GeoPlan-Bench versions:** the HTAM paper reports 1,244 validated tasks, while later work may evaluate a 996-task split. Report the exact split with every score.
-- **Metric mismatch:** final-answer accuracy, tool coverage/order, parameter accuracy, `F1_key`, structural similarity, and holistic Elo measure different failure modes and should not be averaged into one score.
-- **Current evidence:** most 2026 entries, including Earth-Agent-Pro v1, remain preprints. Earth-Agent (ICLR 2026), HiRS-Agent (ACM MM 2026), RSMeM (ACL 2026), UnivEARTH (Findings of ACL 2026), and GeoNatureAgent Benchmark (SIGSPATIAL 2026) have archival venue records; preprint results should be treated as version-specific.
-
-## Part III: General-Purpose Skills
-
-Skill extraction, validation, routing, executable libraries, workflow memory, and experience learning.
-
-### 2026
-
-| Paper | Venue | Focus | Links |
-| --- | --- | --- | --- |
-| **EvoSkill** — EvoSkill: Automated Skill Discovery for Multi-Agent Systems | arXiv preprint | Validated iterative skill discovery | [PDF](papers/general-skills/2026/arXiv/EvoSkill%20-%20Automated%20Skill%20Discovery%20for%20Multi-Agent%20Systems.pdf) · [arXiv](https://arxiv.org/abs/2603.02766) · [Code](https://github.com/sentient-agi/EvoSkill) |
-| **MemSkill** — MemSkill: Learning and Evolving Memory Skills for Self-Evolving Agents | arXiv preprint | Learning and evolving memory operations | [PDF](papers/general-skills/2026/arXiv/MemSkill%20-%20Learning%20and%20Evolving%20Memory%20Skills%20for%20Self-Evolving%20Agents.pdf) · [arXiv](https://arxiv.org/abs/2602.02474) · [Code](https://github.com/ViktorAxelsen/MemSkill) |
-| **MMSkills** — MMSkills: Towards Multimodal Skills for General Visual Agents | arXiv preprint 2026 | Multimodal skill representation and runtime consultation | [PDF](papers/general-skills/2026/arXiv/MMSkills%20-%20Towards%20Multimodal%20Skills%20for%20General%20Visual%20Agents.pdf) · [arXiv](https://arxiv.org/abs/2605.13527) · [Code](https://github.com/DeepExperience/MMSkills) |
-| **SkillCAT** — SkillCAT: Contrastive, Assessment-Augmented and Topology-Aware Skill Self-Evolution for LLM Agents | arXiv preprint | Contrastive extraction, patch assessment, and skill routing | [PDF](papers/general-skills/2026/arXiv/SkillCAT%20-%20Contrastive%2C%20Assessment-Augmented%20and%20Topology-Aware%20Skill%20Self-Evolution%20for%20LLM%20Agents.pdf) · [arXiv](https://arxiv.org/abs/2606.13317) |
-| **SkillOpt** — SkillOpt: Executive Strategy for Self-Evolving Agent Skills | arXiv preprint | Controlled optimization of textual agent skills | [PDF](papers/general-skills/2026/arXiv/SkillOpt%20-%20Executive%20Strategy%20for%20Self-Evolving%20Agent%20Skills.pdf) · [arXiv](https://arxiv.org/abs/2605.23904) · [Code](https://github.com/microsoft/SkillOpt) |
-| **SkillsBench** — SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks | arXiv preprint 2026 | Benchmarking the effectiveness of agent skills | [PDF](papers/general-skills/2026/arXiv/SkillsBench%20-%20Benchmarking%20How%20Well%20Agent%20Skills%20Work%20Across%20Diverse%20Tasks.pdf) · [arXiv](https://arxiv.org/abs/2602.12670) · [Code](https://github.com/benchflow-ai/skillsbench) |
-| **Trace2Skill** — Trace2Skill: Distill Trajectory-Local Lessons into Transferable Agent Skills | arXiv preprint | Distilling portable skills from execution traces | [PDF](papers/general-skills/2026/arXiv/Trace2Skill%20-%20Distill%20Trajectory-Local%20Lessons%20into%20Transferable%20Agent%20Skills.pdf) · [arXiv](https://arxiv.org/abs/2603.25158) · [Code](https://github.com/Qwen-Applications/Trace2Skill) |
-| **XSkill** — XSkill: Continual Learning from Experience and Skills in Multimodal Agents | ICML 2026 (accepted) | Continual learning from experiences and skills | [PDF](papers/general-skills/2026/ICML/XSkill%20-%20Continual%20Learning%20from%20Experience%20and%20Skills%20in%20Multimodal%20Agents.pdf) · [arXiv](https://arxiv.org/abs/2603.12056) · [Code](https://github.com/XSkill-Agent/XSkill) |
-
-### 2025
-
-| Paper | Venue | Focus | Links |
-| --- | --- | --- | --- |
-| **AWM** — Agent Workflow Memory | ICML 2025 | Reusable workflow memory for web agents | [PDF](papers/general-skills/2025/ICML/Agent%20Workflow%20Memory.pdf) · [arXiv](https://arxiv.org/abs/2409.07429) · [Publication](https://proceedings.mlr.press/v267/wang25bx.html) · [Code](https://github.com/zorazrw/agent-workflow-memory) |
-| **SkillWeaver** — SkillWeaver: Web Agents can Self-Improve by Discovering and Honing Skills | arXiv preprint | Discovering and refining callable web skills | [PDF](papers/general-skills/2025/arXiv/SkillWeaver%20-%20Web%20Agents%20can%20Self-Improve%20by%20Discovering%20and%20Honing%20Skills.pdf) · [arXiv](https://arxiv.org/abs/2504.07079) · [Code](https://github.com/OSU-NLP-Group/SkillWeaver) |
-
-### 2024
-
-| Paper | Venue | Focus | Links |
-| --- | --- | --- | --- |
-| **ExpeL** — ExpeL: LLM Agents Are Experiential Learners | AAAI 2024 | Natural-language lessons and experience retrieval | [PDF](papers/general-skills/2024/AAAI/ExpeL%20-%20LLM%20Agents%20Are%20Experiential%20Learners.pdf) · [arXiv](https://arxiv.org/abs/2308.10144) · [Publication](https://ojs.aaai.org/index.php/AAAI/article/view/29936) · [Code](https://github.com/LeapLabTHU/ExpeL) |
-| **Voyager** — Voyager: An Open-Ended Embodied Agent with Large Language Models | Transactions on Machine Learning Research | Executable skill libraries and automatic curricula | [PDF](papers/general-skills/2024/TMLR/Voyager%20-%20An%20Open-Ended%20Embodied%20Agent%20with%20Large%20Language%20Models.pdf) · [arXiv](https://arxiv.org/abs/2305.16291) · [Publication](https://openreview.net/forum?id=ehfRiF0R3a) · [Code](https://github.com/MineDojo/Voyager) |
+PDFs and individual notes have one canonical location. Collection READMEs are thematic views over the same assets, so a paper may appear in several collections without duplicating its PDF or note. This separates **application domains** from **agent mechanisms** and makes the library usable for both remote-sensing research and general agent research.
