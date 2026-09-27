@@ -1,8 +1,8 @@
 # Agent Mechanism Research Library
 
-A structured paper library for studying **how agents learn, remember, evolve, acquire skills, coordinate, and are evaluated**, with remote sensing as a major application domain.
+A structured paper library for studying **how agents learn, remember, evolve, acquire skills, coordinate, and are evaluated**, alongside a dedicated collection of Earth-observation and remote-sensing agents.
 
-The repository currently contains **38 reviewed papers**: **26 remote-sensing papers** and **12 general agent-mechanism papers**. Every archived paper has a local PDF, structured metadata, and an English reading note.
+The local archive currently contains **38 reviewed papers**: **26 remote-sensing papers** and **12 general agent-mechanism papers**. The mechanism collections also link to selected general-domain work found online; those external references are clearly identified and are not claimed as locally archived.
 
 ## Research collections
 
@@ -46,4 +46,4 @@ The repository currently contains **38 reviewed papers**: **26 remote-sensing pa
 
 ## Organization principle
 
-PDFs and individual notes have one canonical location. Collection READMEs are thematic views over the same assets, so a paper may appear in several collections without duplicating its PDF or note. This separates **application domains** from **agent mechanisms** and makes the library usable for both remote-sensing research and general agent research.
+PDFs and individual notes have one canonical location. The domain boundary is strict: **remote-sensing papers appear only in the Remote Sensing Agents collection**. All other collections curate general-domain agent mechanisms and benchmarks, linking to local notes when archived and to external paper/code pages otherwise. This separates application-specific evidence from general mechanism research.
