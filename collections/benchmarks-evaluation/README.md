@@ -4,6 +4,10 @@
 
 This page contains **general-domain** agent benchmarks only. Earth-Bench, GeoPlan-Bench, ThinkGeo, and other EO/geospatial benchmarks stay in [Remote Sensing Agents](../remote-sensing-agents/README.md). The benchmarks below cover interactive tool use, web tasks, computer use, memory, and skill utility.
 
+## How the evaluation landscape fits together
+
+No single score captures agent capability. A useful map runs from broad **multi-environment competence**, through **goal completion in interactive web/computer environments**, to **reliability under user policies**, then to cross-task **persistent learning** (memory/skills). Benchmarks also differ in what is judged: final answer, resulting environment state, action trajectory, or future-task improvement. Always compare results only under matching task splits, model, tools, retries, judge, and budget.
+
 | Benchmark | Primary capability | Venue · PDF · arXiv · Code |
 | --- | --- | --- |
 | AgentBench | LLM agent reasoning and decision-making across eight interactive environments | ICLR 2024 · [PDF](https://proceedings.iclr.cc/paper_files/paper/2024/file/e9df36b21ff4ee211a8b71ee8b7e9f57-Paper-Conference.pdf) · [arXiv](https://arxiv.org/abs/2308.03688) · [Code](https://github.com/THUDM/AgentBench) |
@@ -11,9 +15,15 @@ This page contains **general-domain** agent benchmarks only. Earth-Bench, GeoPla
 | WebArena | Long-horizon web tasks on realistic, self-hosted websites | ICLR 2024 · [PDF](https://proceedings.iclr.cc/paper_files/paper/2024/file/4410c0711e9154a7a2d26f9b3816d1ef-Paper-Conference.pdf) · [arXiv](https://arxiv.org/abs/2307.13854) · [Code](https://github.com/webuiagent/webarena-official) |
 | OSWorld | Open-ended multimodal computer-use tasks across operating systems and applications | NeurIPS 2024 Datasets & Benchmarks · [PDF](https://proceedings.neurips.cc/paper_files/paper/2024/file/5d413e48f84dc61244b6be550f1cd8f5-Paper-Datasets_and_Benchmarks_Track.pdf) · [arXiv](https://arxiv.org/abs/2404.07972) · [Code](https://github.com/xlang-ai/OSWorld) |
 | AndroidWorld | Interactive mobile-device tasks in a reproducible Android environment | ICLR 2025 · [PDF](https://arxiv.org/pdf/2405.14505) · [arXiv](https://arxiv.org/abs/2405.14505) · [Code](https://github.com/google-research/android_world) |
+| τ-bench | Multi-turn tool-agent-user interactions under domain policies; includes repeated-trial reliability via pass^k | arXiv preprint 2024 · [PDF](https://arxiv.org/pdf/2406.12045) · [arXiv](https://arxiv.org/abs/2406.12045) · [Code](https://github.com/sierra-research/tau-bench) |
 | LongMemEval | Long-term conversational memory and multi-session reasoning | ICLR 2025 · [PDF](https://arxiv.org/pdf/2410.10813) · [arXiv](https://arxiv.org/abs/2410.10813) · [Code](https://github.com/xiaowu0162/LongMemEval) |
+| MemBench | Memory effectiveness, efficiency, and capacity over multi-faceted memory tasks | Findings of ACL 2025 · [PDF](https://aclanthology.org/2025.findings-acl.989.pdf) · [arXiv](https://arxiv.org/abs/2506.21605) · [Code](https://github.com/import-myself/Membench) |
 | SkillsBench | Whether explicit procedural skills improve performance across diverse tasks | arXiv preprint 2026 · [PDF](../../papers/general-skills/2026/arXiv/SkillsBench%20-%20Benchmarking%20How%20Well%20Agent%20Skills%20Work%20Across%20Diverse%20Tasks.pdf) · [arXiv](https://arxiv.org/abs/2602.12670) · [Code](https://github.com/benchflow-ai/skillsbench) |
-| MemoryAgentBench | Memory agents' retrieval, test-time learning, long-range understanding, and conflict resolution | ICLR 2026 · [PDF](https://arxiv.org/pdf/2507.05257) · [arXiv](https://arxiv.org/abs/2507.05257) · [Code](https://github.com/HUST-AI-HYZ/MemoryAgentBench) |
+| MemoryAgentBench | Four memory competencies: accurate retrieval, test-time learning, long-range understanding, and selective forgetting | ICLR 2026 · [PDF](https://arxiv.org/pdf/2507.05257) · [arXiv](https://arxiv.org/abs/2507.05257) · [Code](https://github.com/HUST-AI-HYZ/MemoryAgentBench) |
+| MemoryArena | Interdependent multi-session tasks link agent memory with later action in web navigation, planning, search, and reasoning environments | ICML 2026 · [PDF](https://arxiv.org/pdf/2602.16313) · [arXiv](https://arxiv.org/abs/2602.16313) · [Code](https://github.com/ZexueHe/MemoryArena) |
+| AMA-Bench | Long-context retention and long-horizon memory built from agent trajectories, with variable task horizons | ICML 2026 · [PDF](https://arxiv.org/pdf/2602.22769) · [arXiv](https://arxiv.org/abs/2602.22769) · [Code](https://github.com/AMA-Bench/AMA-Bench) |
+
+For a mechanism-oriented reading path, use **AgentBench / GAIA** as broad task suites, **WebArena / OSWorld / AndroidWorld / τ-bench** for environment-specific interaction and reliability, and **LongMemEval / MemBench / MemoryAgentBench / MemoryArena / AMA-Bench** for persistent memory from retrieval to memory-dependent action. **SkillsBench** asks a related but distinct question: do reusable procedural resources help, and under what task/model conditions?
 
 ## Evaluation dimensions
 
@@ -26,3 +36,4 @@ This page contains **general-domain** agent benchmarks only. Earth-Bench, GeoPla
 | Persistent learning | Retention, negative transfer, skill/memory contamination | Whether updates help future tasks safely |
 
 Always report the model, environment version, tool inventory, interaction/retry budget, scoring protocol, and judge configuration. For EO-specific evaluation, use the remote-sensing collection linked above.
+
