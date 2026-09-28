@@ -9,6 +9,7 @@ This collection treats remote sensing as an agent research testbed: heterogeneou
 | Paper | Role in the landscape | Mechanism lens | Venue / PDF / arXiv / Code | Reading note |
 | --- | --- | --- | --- | --- |
 | AgenticRS | Position paper | EO-native state, validity, verification, and evaluation principles | arXiv preprint 2026; [PDF](../../papers/remote-sensing/2026/arXiv/Agentic%20AI%20for%20Remote%20Sensing%20-%20Technical%20Challenges%20and%20Research%20Directions.pdf); [arXiv](https://arxiv.org/abs/2604.24919); Code: not listed | [Note](../../notes/remote-sensing/AgenticRS.md) |
+| TerraBench / TerraAgent | Earth-system agent + benchmark | Unified executable reasoning across EO imagery, gridded data, GIS, simulators, and document evidence; process-level tool metrics plus tolerance-aware numeric scoring | arXiv preprint 2026; [PDF](https://arxiv.org/pdf/2606.13148); [arXiv](https://arxiv.org/abs/2606.13148); [Code](https://github.com/Takerdat23/TerraBench) | External paper |
 | Earth-Agent | Agent + Earth-Bench | MCP tool ecosystem and cross-modal EO execution | ICLR 2026; [PDF](../../papers/remote-sensing/2026/ICLR/Earth-Agent%20-%20Unlocking%20the%20Full%20Landscape%20of%20Earth%20Observation%20with%20Agents.pdf); [arXiv](https://arxiv.org/abs/2509.23141); [Code](https://github.com/opendatalab/Earth-Agent) | [Note](../../notes/remote-sensing/Earth-Agent.md) |
 | Earth-Agent-Pro | Agent + Earth-Bench-Pro | Skill-guided planning, evidence memory, suffix repair, SFT + GRPO | arXiv preprint 2026; [PDF](../../papers/remote-sensing/2026/arXiv/Earth-Agent-Pro%20-%20Towards%20Real-World%20Full-Chain%20Earth%20Observation%20with%20Agents.pdf); [arXiv](https://arxiv.org/abs/2609.12533); Code: not listed | [Note](../../notes/remote-sensing/Earth-Agent-Pro.md) |
 | GaiaAgent | Agent workflow + perception | Multi-agent 2D/3D land-cover change analysis | ISPRS Journal of Photogrammetry and Remote Sensing; [PDF](../../papers/remote-sensing/2026/ISPRS-JPRS/Towards%20comprehensive%20multi-task%20land%20cover%20change%20detection%20leveraging%20vision-language%20model%20and%20LLM-driven%20agents.pdf); arXiv: none; Code: not listed | [Note](../../notes/remote-sensing/GaiaAgent.md) |
@@ -50,7 +51,8 @@ This collection treats remote sensing as an agent research testbed: heterogeneou
 - Training-free evolution: GeoEvolver -> GeoForge -> RSMeM.
 - Skill and tool organization: RS-Claw -> GeoForge -> Earth-Agent-Pro.
 - Parameter training: OpenEarthAgent -> RemoteAgent -> HiRS-Agent -> Earth-Agent-Pro.
-- Benchmark progression: GeoLLM-QA -> ThinkGeo -> Earth-Bench -> Earth-Bench-Pro.
+- Benchmark progression: GeoLLM-QA -> ThinkGeo -> Earth-Bench -> Earth-Bench-Pro; TerraBench adds broader Earth-system workflows spanning EO, GIS, gridded data, and simulators.
 - Open environments: OpenEarth-Agent -> Earth-Agent-Pro.
 
 For protocol-level comparisons, continue to [Benchmarks and Evaluation](../benchmarks-evaluation/README.md).
+
