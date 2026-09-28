@@ -43,6 +43,8 @@ This is the key transition from a memory **store** to a memory **manager**. The 
 | MemRL | Runtime, non-parametric RL updates utility estimates over episodic experience; separates stable reasoning weights from plastic memory | arXiv preprint 2026 · [PDF](https://arxiv.org/pdf/2601.03192) · [arXiv](https://arxiv.org/abs/2601.03192) · [Code](https://github.com/MemTensor/MemRL) | External paper |
 | MemSkill | Represents memory operations as reusable skills and trains a controller to select/evolve them | NeurIPS 2026 · [PDF](https://arxiv.org/pdf/2602.02474) · [arXiv](https://arxiv.org/abs/2602.02474) · [Code](https://github.com/ViktorAxelsen/MemSkill) | [Note](../../notes/general-skills/MemSkill.md) |
 | Agentic Memory (AgeMem) | Unifies short-/long-term memory and trains policy-level memory tool use (e.g., add, update, retrieve, summarize, filter) with progressive RL | ACL 2026 · [PDF](https://aclanthology.org/2026.acl-long.981.pdf) · [arXiv](https://arxiv.org/abs/2601.01885) · Code: not listed | External paper |
+| How Memory Management Impacts LLM Agents: An Empirical Study of Experience-Following Behavior | Analyzes how filtering, retaining, or replaying prior experiences affects agent behavior, including error propagation and memory misalignment | ACL 2026 · [PDF](https://aclanthology.org/2026.acl-long.27.pdf) · [arXiv](https://arxiv.org/abs/2505.16067) · [Code](https://github.com/yuplin2333/agent_memory_manage17) | External paper |
+| Memory as a Controlled Process (MemCon) | Frames memory construction and maintenance as an adaptive control problem rather than a static retrieval component | arXiv preprint 2026 · [PDF](https://arxiv.org/pdf/2607.13591) · [arXiv](https://arxiv.org/abs/2607.13591) · Code: not listed | External paper |
 
 ## D. Benchmarks: from recall to memory-dependent behavior
 
@@ -54,6 +56,8 @@ This is the key transition from a memory **store** to a memory **manager**. The 
 | MemoryAgentBench | Four memory competencies: accurate retrieval, test-time learning, long-range understanding, and selective forgetting | ICLR 2026 · [PDF](https://arxiv.org/pdf/2507.05257) · [arXiv](https://arxiv.org/abs/2507.05257) · [Code](https://github.com/HUST-AI-HYZ/MemoryAgentBench) |
 | MemoryArena | Couples the agent, its memory, and an interactive environment in interdependent multi-session tasks; tests whether memory supports future actions, not only QA | ICML 2026 · [PDF](https://arxiv.org/pdf/2602.16313) · [arXiv](https://arxiv.org/abs/2602.16313) · [Code](https://github.com/ZexueHe/MemoryArena) |
 | AMA-Bench | Evaluates long-context retention and long-horizon agent memory over realistic trajectories and variable task horizons | ICML 2026 · [PDF](https://arxiv.org/pdf/2602.22769) · [arXiv](https://arxiv.org/abs/2602.22769) · [Code](https://github.com/AMA-Bench/AMA-Bench) |
+| Mem2ActBench | Tests whether remembered preferences and task state are actively applied to tool choice and parameter grounding, not just answered as recall questions | ACL 2026 · [PDF](https://aclanthology.org/2026.acl-long.370.pdf) · [arXiv](https://arxiv.org/abs/2601.19935) · [Code](https://github.com/Cantaloupe-M/Mem2ActBench) |
+| AMemGym | Interactive, on-policy benchmark for personalized memory: memory must improve behavior over continuing interaction, not merely answer static queries | ICLR 2026 · [PDF](https://arxiv.org/pdf/2603.01966) · [arXiv](https://arxiv.org/abs/2603.01966) · [Project / code](https://agi-eval-official.github.io/amemgym/) |
 
 ## E. Surveys and entry points
 
