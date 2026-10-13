@@ -4,6 +4,12 @@
 
 This collection treats remote sensing as an agent research testbed: heterogeneous observations, geospatial state, long tool chains, quantitative outputs, and physically constrained workflows make failures observable beyond fluent final answers.
 
+## 2027
+
+| Paper | Role in the landscape | Mechanism lens | Venue / PDF / arXiv / Code | Reading note |
+| --- | --- | --- | --- | --- |
+| TriSV-CD | Reliability study + arbitration method | Prompt-sensitive VLM decision audit and transparent rollback gating for change detection | Expert Systems with Applications 334 (2027); [PDF](../../papers/remote-sensing/2027/ESWA/TriSV-CD%20-%20Selective%20verification%20with%20a%20do-no-harm%20arbitration%20gate%20for%20reliable%20remote%20sensing%20change%20detection.pdf); arXiv: none; Code: not listed | [Note](../../notes/remote-sensing/TriSV-CD.md) |
+
 ## 2026
 
 | Paper | Role in the landscape | Mechanism lens | Venue / PDF / arXiv / Code | Reading note |
@@ -12,8 +18,11 @@ This collection treats remote sensing as an agent research testbed: heterogeneou
 | TerraBench / TerraAgent | Earth-system agent + benchmark | Unified executable reasoning across EO imagery, gridded data, GIS, simulators, and document evidence; process-level tool metrics plus tolerance-aware numeric scoring | arXiv preprint 2026; [PDF](https://arxiv.org/pdf/2606.13148); [arXiv](https://arxiv.org/abs/2606.13148); [Code](https://github.com/Takerdat23/TerraBench) | External paper |
 | Earth-Agent | Agent + Earth-Bench | MCP tool ecosystem and cross-modal EO execution | ICLR 2026; [PDF](../../papers/remote-sensing/2026/ICLR/Earth-Agent%20-%20Unlocking%20the%20Full%20Landscape%20of%20Earth%20Observation%20with%20Agents.pdf); [arXiv](https://arxiv.org/abs/2509.23141); [Code](https://github.com/opendatalab/Earth-Agent) | [Note](../../notes/remote-sensing/Earth-Agent.md) |
 | Earth-Agent-Pro | Agent + Earth-Bench-Pro | Skill-guided planning, evidence memory, suffix repair, SFT + GRPO | arXiv preprint 2026; [PDF](../../papers/remote-sensing/2026/arXiv/Earth-Agent-Pro%20-%20Towards%20Real-World%20Full-Chain%20Earth%20Observation%20with%20Agents.pdf); [arXiv](https://arxiv.org/abs/2609.12533); Code: not listed | [Note](../../notes/remote-sensing/Earth-Agent-Pro.md) |
+| LongEarth-R1 | Supporting temporal reasoning model + benchmark | Long-sequence evidence traces, sequence-aware SFT, and temporal/spatial GRPO | arXiv preprint 2026; [PDF](../../papers/remote-sensing/2026/arXiv/LongEarth-R1%20-%20Benchmarking%20and%20Aligning%20Vision-Language%20Models%20for%20Long-Horizon%20Earth%20Observation%20Reasoning.pdf); [arXiv](https://arxiv.org/abs/2608.13344); Code: not listed | [Note](../../notes/remote-sensing/LongEarth-R1.md) |
 | GaiaAgent | Agent workflow + perception | Multi-agent 2D/3D land-cover change analysis | ISPRS Journal of Photogrammetry and Remote Sensing; [PDF](../../papers/remote-sensing/2026/ISPRS-JPRS/Towards%20comprehensive%20multi-task%20land%20cover%20change%20detection%20leveraging%20vision-language%20model%20and%20LLM-driven%20agents.pdf); arXiv: none; Code: not listed | [Note](../../notes/remote-sensing/GaiaAgent.md) |
 | GeoAgent | Supporting geolocation model | Reinforced geographic characteristics | CVPR 2026; [PDF](../../papers/remote-sensing/2026/CVPR/GeoAgent%20-%20Learning%20to%20Geolocate%20Everywhere%20with%20Reinforced%20Geographic%20Characteristics.pdf); [arXiv](https://arxiv.org/abs/2602.12617); [Code](https://github.com/HVision-NKU/GeoAgent) | [Note](../../notes/remote-sensing/GeoAgent.md) |
+| Geo-CoT | Supporting reasoning model + dataset | Spatially grounded analytical traces with SFT + GRPO alignment | ICLR 2026; [PDF](../../papers/remote-sensing/2026/ICLR/Towards%20Faithful%20Reasoning%20in%20Remote%20Sensing%20-%20A%20Perceptually-Grounded%20GeoSpatial%20Chain-of-Thought%20for%20Vision-Language%20Models.pdf); [arXiv](https://arxiv.org/abs/2509.22221); [Code](https://github.com/minglangL/RSThinker) | [Note](../../notes/remote-sensing/Geo-CoT.md) |
+| GeoX | Supporting geospatial reasoning training | Program-verifiable self-play over abduction, deduction, and induction | arXiv preprint 2026; [PDF](../../papers/remote-sensing/2026/arXiv/GeoX%20-%20Mastering%20Geospatial%20Reasoning%20Through%20Self-Play%20and%20Verifiable%20Rewards.pdf); [arXiv](https://arxiv.org/abs/2605.20006); Code: not listed | [Note](../../notes/remote-sensing/GeoX.md) |
 | GeoEvolver | Self-evolving multi-agent system | Training-free exploration and failure-derived constraints | arXiv preprint; [PDF](../../papers/remote-sensing/2026/arXiv/Experience-Driven%20Multi-Agent%20Systems%20Are%20Training-free%20Context-aware%20Earth%20Observers.pdf); [arXiv](https://arxiv.org/abs/2602.02559); Code: not listed | [Note](../../notes/remote-sensing/GeoEvolver.md) |
 | GeoForge | Self-evolving agent | Workflow graph, action experience, and skill-SOP memories | arXiv preprint 2026; [PDF](../../papers/remote-sensing/2026/arXiv/GeoForge%20-%20Non-Parametric%20Self-Evolving%20Agents%20for%20Earth-Observation%20Reasoning.pdf); [arXiv](https://arxiv.org/abs/2608.10494); Code: not listed | [Note](../../notes/remote-sensing/GeoForge.md) |
 | GeoMMAgent | Agent + GeoMMBench | Specialist coordination for expert multimodal reasoning | CVPR 2026 (Highlight); [PDF](../../papers/remote-sensing/2026/CVPR/GeoMMBench%20and%20GeoMMAgent%20-%20Toward%20Expert-Level%20Multimodal%20Intelligence%20in%20Geoscience%20and%20Remote%20Sensing.pdf); [arXiv](https://arxiv.org/abs/2604.08896); [Code](https://github.com/Shihao-Cheng/GeoMMAgent) | [Note](../../notes/remote-sensing/GeoMMAgent.md) |
@@ -26,6 +35,8 @@ This collection treats remote sensing as an agent research testbed: heterogeneou
 | RS-Claw | Skill/tool architecture | Progressive exploration of hierarchical tool documentation | arXiv preprint 2026; [PDF](../../papers/remote-sensing/2026/arXiv/RS-Claw%20-%20Progressive%20Active%20Tool%20Exploration%20via%20Hierarchical%20Skill%20Trees%20for%20Remote%20Sensing%20Agents.pdf); [arXiv](https://arxiv.org/abs/2605.13391); Code: not listed | [Note](../../notes/remote-sensing/RS-Claw.md) |
 | RSMeM | Self-evolving memory agent | Hierarchical knowledge and failure-aware experience refinement | ACL 2026; [PDF](../../papers/remote-sensing/2026/ACL/RSMeM%20-%20Knowledge-Enhanced%20Memory%20Evolution%20for%20Remote%20Sensing%20Agents%20with%20Systematic%20Evaluation.pdf); [arXiv](https://arxiv.org/abs/2607.24772); [Code](https://github.com/AI9Stars/RSMeM) | [Note](../../notes/remote-sensing/RSMeM.md) |
 | UnivEARTH | Coding benchmark | Evidence-grounded Google Earth Engine execution | Findings of ACL 2026; [PDF](../../papers/remote-sensing/2026/ACL-Findings/Towards%20LLM%20Agents%20for%20Earth%20Observation.pdf); [arXiv](https://arxiv.org/abs/2504.12110); Code: not listed | [Note](../../notes/remote-sensing/UnivEARTH.md) |
+| CrossSO | Supporting observation-policy model + dataset | Cost-aware high-resolution selection and latent completion | ACM Multimedia 2026; [PDF](../../papers/remote-sensing/2026/ACM-MM/Observe%20Less,%20Understand%20More%20-%20Cost-aware%20Cross-scale%20Observation%20for%20Remote%20Sensing%20Understanding.pdf); [arXiv](https://arxiv.org/abs/2604.11415); [Code](https://github.com/xzhacc/CrossSO) | [Note](../../notes/remote-sensing/CrossSO.md) |
+| VLRS-Bench | Supporting reasoning benchmark | Cognition-, decision-, and prediction-oriented diagnosis with RS priors | arXiv preprint 2026; [PDF](../../papers/remote-sensing/2026/arXiv/VLRS-Bench%20-%20A%20Vision-Language%20Reasoning%20Benchmark%20for%20Remote%20Sensing.pdf); [arXiv](https://arxiv.org/abs/2602.07045); [Code](https://github.com/MiliLab/VLRS-Bench) | [Note](../../notes/remote-sensing/VLRS-Bench.md) |
 
 ## 2025
 
@@ -52,6 +63,8 @@ This collection treats remote sensing as an agent research testbed: heterogeneou
 - Skill and tool organization: RS-Claw -> GeoForge -> Earth-Agent-Pro.
 - Parameter training: OpenEarthAgent -> RemoteAgent -> HiRS-Agent -> Earth-Agent-Pro.
 - Benchmark progression: GeoLLM-QA -> ThinkGeo -> Earth-Bench -> Earth-Bench-Pro; TerraBench adds broader Earth-system workflows spanning EO, GIS, gridded data, and simulators.
+- Visual reasoning and alignment: VLRS-Bench -> Geo-CoT -> GeoX; LongEarth-R1 adds long-sequence temporal grounding.
+- Selective observation and reliable correction: CrossSO -> TriSV-CD.
 - Open environments: OpenEarth-Agent -> Earth-Agent-Pro.
 
 For protocol-level comparisons, continue to [Benchmarks and Evaluation](../benchmarks-evaluation/README.md).

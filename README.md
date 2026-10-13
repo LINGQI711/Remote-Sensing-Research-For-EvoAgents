@@ -2,7 +2,7 @@
 
 A structured paper library for studying **how agents learn, remember, evolve, acquire skills, coordinate, and are evaluated**, alongside a dedicated collection of Earth-observation and remote-sensing agents.
 
-The local archive currently contains **38 reviewed papers**: **26 remote-sensing papers** and **12 general agent-mechanism papers**. The mechanism collections also link to selected general-domain work found online; those external references are clearly identified and are not claimed as locally archived.
+The local archive currently contains **44 reviewed papers**: **32 remote-sensing papers** and **12 general agent-mechanism papers**. The mechanism collections also link to selected general-domain work found online; those external references are clearly identified and are not claimed as locally archived.
 
 ## Research collections
 

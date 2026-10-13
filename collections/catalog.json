@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "updated": "2026-09-27",
+  "updated": "2026-10-07",
   "collections": {
     "remote-sensing-agents": [
-      "AgenticRS", "Earth-Agent", "Earth-Agent-Pro", "GaiaAgent", "GeoAgent", "GeoEvolver", "GeoForge", "GeoMMAgent", "HiRS-Agent", "MapAgent", "OpenEarth-Agent", "OpenEarthAgent", "RemoteAgent", "RS-Agent", "RS-Claw", "RSMeM", "UnivEARTH", "GeoEvolve", "Multi-Agent-Geospatial-Copilots", "REMSA", "RingMo-Agent", "ThinkGeo", "Change-Agent", "GeoLLM-Engine", "GeoLLM-QA", "Remote-Sensing-ChatGPT"
+      "AgenticRS", "Earth-Agent", "Earth-Agent-Pro", "GaiaAgent", "GeoAgent", "GeoEvolver", "GeoForge", "GeoMMAgent", "HiRS-Agent", "MapAgent", "OpenEarth-Agent", "OpenEarthAgent", "RemoteAgent", "RS-Agent", "RS-Claw", "RSMeM", "UnivEARTH", "LongEarth-R1", "Geo-CoT", "GeoX", "CrossSO", "TriSV-CD", "VLRS-Bench", "GeoEvolve", "Multi-Agent-Geospatial-Copilots", "REMSA", "RingMo-Agent", "ThinkGeo", "Change-Agent", "GeoLLM-Engine", "GeoLLM-QA", "Remote-Sensing-ChatGPT"
     ],
     "training-free-agent-learning": [
       "EvoSkill", "SkillCAT", "SkillOpt", "Trace2Skill", "XSkill", "AWM", "SkillWeaver", "ExpeL", "Voyager"
